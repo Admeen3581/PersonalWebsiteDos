@@ -19,3 +19,24 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@font-face {
+  font-family: 'Astrospace';
+  src: url('/public/fonts/Astrospace.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ethnocentric';
+  src: url('/public/fonts/Ethnocentric.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Blue Highway';
+  src: url('/public/fonts/BlueHighway.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
