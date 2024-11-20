@@ -8,38 +8,40 @@
 
 import Image from "next/image";
 import Particles from "@/components/ui/particles";
+import GradualSpacing from "@/components/ui/gradual-spacing";
 
 function Home() {
   return (
-      <div>
-          <div>
-
-          </div>
-          {/*Background*/}
-          <div className="relative min-h-screen">
-
+      <div className="relative min-h-screen min-w-screen overflow-hidden">
+          {/* Background Layer */}
+          <div className="absolute inset-0">
               <Image
                   src="/conny-schneider-abstract.jpg"
                   alt="background image"
                   className=""
                   fill
               />
-
               <div className="absolute inset-0 bg-black opacity-65 z-10"></div>
+              <Particles
+                  quantity={800}
+                  color="#FFFFFF"
+                  staticity={95}
+                  size={0.8}
+                  vx={0.1}
+                  vy={-0.1}
+                  className="absolute inset-0 opacity-70 z-20"
+              />
+          </div>
 
-              <div className='relative z-20 min-h-screen'>
-                  <Particles
-                      quantity={700}
-                      color={'#FFFFFF'}
-                      size={0.8}
-                      vx={0.1}
-                      vy={-0.1}
-                      className='opacity-70'
-                  />
-              </div>
-
+          {/* Foreground Layer */}
+          <div className="relative z-30 flex flex-col items-center justify-center h-full">
+              <GradualSpacing
+                  text="Test Text Helloo"
+                  className="text-5xl text-white p-10 pt-20"
+              />
           </div>
       </div>
+
 
   );
 }
