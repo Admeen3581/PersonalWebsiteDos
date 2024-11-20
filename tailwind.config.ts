@@ -25,7 +25,29 @@ const config: Config = {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+  		keyframes: {
+  			'background-position-spin': {
+  				'0%': {
+  					backgroundPosition: 'top center'
+  				},
+  				'100%': {
+  					backgroundPosition: 'bottom center'
+  				}
+			},
+			slideName: {
+				'0%': { transform: 'translateX(-2000px)' },
+				'100%': { transform: 'translateX(0)' },
+			},
+  		},
+		animation: {
+			'background-position-spin': 'background-position-spin 3000ms infinite alternate',
+			slideName: 'slideName 2.5s forwards',
+		},
+		animationDelay: {
+			  '1.5s' : '1.5',
+			  '2.5s': '2.5s',
+		}
   	}
   },
   plugins: [

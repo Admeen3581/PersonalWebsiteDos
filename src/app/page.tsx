@@ -9,6 +9,7 @@
 import Image from "next/image";
 import Particles from "@/components/ui/particles";
 import GradualSpacing from "@/components/ui/gradual-spacing";
+import {NeonGradientCard} from "@/components/ui/neon-gradient-card";
 
 function Home() {
   return (
@@ -35,9 +36,27 @@ function Home() {
 
           {/* Foreground Layer */}
           <div className="relative z-30 flex flex-col items-center justify-center h-full">
+              {/*Nav Bar Layer*/}
+              <div className="pt-20 animate-slideName delay-[2.5s]">
+                  <NeonGradientCard
+                      className="max-w-sm flex items-center justify-center text-center"
+                      borderRadius={500}
+                      neonColors={{
+                          firstColor: "#03346E",
+                          secondColor: "#6EACDA"
+                      }}
+                  >
+                      <span className="pointer-events-none z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#03346E] from-50% to-[#6EACDA] bg-clip-text text-8xl font-bold leading-none tracking-tighter text-transparent">
+                          AL
+                      </span>
+                  </NeonGradientCard>
+
+
+
+              </div>
               <GradualSpacing
                   text="Test Text Helloo"
-                  className="font-display text-7xl text-white pt-20 font-ethnocentric"
+                  className="font-display text-7xl text-white pt-40 font-ethnocentric"
                   duration={1.5}
                   delayMultiple={0.06}
               />
