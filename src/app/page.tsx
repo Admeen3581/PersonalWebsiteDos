@@ -37,7 +37,9 @@ function Home() {
           <div className="relative z-30 flex flex-col items-center justify-center h-full">
               <GradualSpacing
                   text="Test Text Helloo"
-                  className="text-5xl text-white p-10 pt-20"
+                  className="font-display text-7xl text-white pt-20 font-ethnocentric"
+                  duration={1.5}
+                  delayMultiple={0.06}
               />
           </div>
       </div>
