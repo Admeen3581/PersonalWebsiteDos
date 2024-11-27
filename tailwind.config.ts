@@ -46,7 +46,8 @@ const config: Config = {
 		},
 		animationDelay: {
 			  '1.5s' : '1.5',
-			  '2.5s': '2.5s',
+			'2.0s' : '2.0s',
+			'2.5s': '2.5s',
 		}
   	}
   },
