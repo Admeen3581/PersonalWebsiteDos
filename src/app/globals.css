@@ -32,6 +32,11 @@ body {
   src: url("/fonts/aptos.ttf") format('truetype');
 }
 
+@font-face {
+  font-family: 'Space';
+  src: url("/fonts/Spaceline.otf") format("opentype");
+}
+
 @layer base {
   :root {
     --radius: 0.5rem;

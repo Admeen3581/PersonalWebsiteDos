@@ -21,7 +21,8 @@ const config: Config = {
   			ethnocentric: ["Ethnocentric", "sans-serif"],
   			bluehighway: ["Blue Highway", "sans-serif"],
 			dagger: ["Daggersquare", "sans-serif"],
-			aptos: ['Aptos', 'monospaced'],
+			aptos: ['Aptos', 'monospace'],
+			space: ['Space', 'monospace'],
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
