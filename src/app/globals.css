@@ -27,6 +27,11 @@ body {
   src: url('/fonts/Daggersquare.otf') format('opentype');
 }
 
+@font-face {
+  font-family: 'Aptos';
+  src: url("/fonts/aptos.ttf") format('truetype');
+}
+
 @layer base {
   :root {
     --radius: 0.5rem;

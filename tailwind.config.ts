@@ -20,7 +20,8 @@ const config: Config = {
   		fontFamily: {
   			ethnocentric: ["Ethnocentric", "sans-serif"],
   			bluehighway: ["Blue Highway", "sans-serif"],
-			dagger: ["Daggersquare", "sans-serif"]
+			dagger: ["Daggersquare", "sans-serif"],
+			aptos: ['Aptos', 'monospaced'],
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
