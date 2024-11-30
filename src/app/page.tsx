@@ -52,16 +52,24 @@ function Home() {
                   <LeftHomePageNavbar/>
 
                   <NeonGradientCard
-                      className="max-w-sm flex items-center justify-center text-center"
-                      borderRadius={500}
+                      className="max-w-sm flex items-center justify-center text-center rounded-full pointer-events-none"
+                      borderRadius={100}
+                      borderSize={15}
                       neonColors={{
                           firstColor: "#073873",
                           secondColor: "#FFFFFF"
                       }}
                   >
-                      <span className="pointer-events-none z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#03346E] from-50% to-[#6EACDA] bg-clip-text text-6xl font-bold leading-none tracking-tighter text-transparent">
-                          AL
-                      </span>
+                      {/*<span className=" text-transparent">*/}
+                      {/*    AL*/}
+                      {/*</span>*/}
+                      <Image
+                          src="/pictures/al18.jpg"
+                          className='rounded-full'
+                          width={128}
+                          height={128}
+                          alt="Picture of the author"
+                      />
                   </NeonGradientCard>
 
                   <RightHomePageNavbar/>
@@ -69,8 +77,8 @@ function Home() {
 
               {/*Title Text*/}
               <GradualSpacing
-                  text="Test Teot"
-                  className="font-display text-7xl text-white pt-52 font-avalors"
+                  text="Adam Long"
+                  className="font-display text-7xl text-white pt-52 font-avalors shadow-inner"
                   duration={2.0}
                   delayMultiple={0.09}
               />

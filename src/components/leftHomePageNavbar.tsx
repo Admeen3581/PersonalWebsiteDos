@@ -24,7 +24,7 @@ const LeftHomePageNavbar = () => {
             <NavigationMenu className='relative' direction={"right"}>
                 <NavigationMenuList>
                     <NavigationMenuItem>
-                        <NavigationMenuTrigger className="hover:text-blue-400 font-size-20 font-dagger">Getting started</NavigationMenuTrigger>
+                        <NavigationMenuTrigger className="hover:text-blue-400 font-size-24 font-dagger">Getting started</NavigationMenuTrigger>
                         <NavigationMenuContent className='bg-gray-800 h-52'>
                             <ul className="grid gap-3 p-6 bg-gray-700 rounded-md shadow-lg md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                                 <li className="row-span-3">
@@ -55,7 +55,7 @@ const LeftHomePageNavbar = () => {
                         </NavigationMenuContent>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
-                        <NavigationMenuTrigger className="hover:text-blue-400 font-size-20 font-dagger">Components</NavigationMenuTrigger>
+                        <NavigationMenuTrigger className="hover:text-blue-400 font-size-24 font-dagger">Components</NavigationMenuTrigger>
                         <NavigationMenuContent className='bg-gray-800 h-52'>
                             <ul className="grid w-[400px] gap-3 p-4 bg-gray-700 rounded-md shadow-lg md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                                 {leftElements.map(component => (

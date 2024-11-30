@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+		boxShadow: {
+			'inner-xl': 'inset 0 4px 8px 0 rgb(0 0 0 / 0.05)',
+		},
   		colors: {
   			background: 'var(--background)',
   			foreground: 'var(--foreground)',
@@ -45,15 +48,15 @@ const config: Config = {
 			},
   		},
 		animation: {
-			'background-position-spin': 'background-position-spin 3000ms infinite alternate',
+			'background-position-spin': 'background-position-spin 2200ms infinite alternate',
 			slideName: 'slideName 2.5s forwards',
 		},
 		animationDelay: {
-			  '0.5s' : '0.5s',
-			  '1.5s' : '1.5',
+			'1.5s' : '1.5',
+			'0.5s' : '0.5s',
 			'1.7s' : '1.75s',
 			'2.0s' : '2.0s',
-			'2.5s': '2.5s',
+			'2.5s' : '2.5s',
 		}
   	}
   },

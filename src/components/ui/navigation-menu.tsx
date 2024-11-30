@@ -1,8 +1,12 @@
+/**
+ * @Author Dennis Ollhoff & Adam Long
+ * @copyright All rights reserved.
+ */
+
 import * as React from 'react'
 import * as NavigationMenuPrimitive from '@radix-ui/react-navigation-menu'
 import { cva } from 'class-variance-authority'
 import { ChevronDown } from 'lucide-react'
-
 import { ny } from '@/lib/utils'
 
 const NavigationMenu = React.forwardRef<
