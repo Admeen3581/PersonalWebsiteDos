@@ -24,7 +24,7 @@ const RightHomePageNavbar = () => {
             <NavigationMenu className='relative' direction={"left-0"}>
                 <NavigationMenuList>
                     <NavigationMenuItem>
-                        <NavigationMenuTrigger className="hover:text-blue-400 text-lg font-dagger">Resources</NavigationMenuTrigger>
+                        <NavigationMenuTrigger className="hover:text-blue-400 text-lg font-dagger pr-16">Resources</NavigationMenuTrigger>
                         <NavigationMenuContent className='bg-gray-800 h-56'>
                             <ul className="grid gap-3 p-6 bg-gray-700 rounded-md shadow-lg md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                                 <li className="row-span-3">
