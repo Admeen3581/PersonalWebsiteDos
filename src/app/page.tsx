@@ -70,7 +70,7 @@ function Home() {
               {/*Title Text*/}
               <GradualSpacing
                   text="Test Teot"
-                  className="font-display text-7xl text-white pt-52 font-space"
+                  className="font-display text-7xl text-white pt-52 font-avalors"
                   duration={2.0}
                   delayMultiple={0.09}
               />

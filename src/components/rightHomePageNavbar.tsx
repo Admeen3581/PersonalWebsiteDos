@@ -21,7 +21,7 @@ import {rightElements} from '@/lib/navBarElements'
 const RightHomePageNavbar = () => {
     return (
         <div className="text-white p-4 ml-10">
-            <NavigationMenu>
+            <NavigationMenu className='relative' direction={"left"}>
                 <NavigationMenuList>
                     <NavigationMenuItem>
                         <NavigationMenuTrigger className="hover:text-blue-400 font-size-20 font-dagger">Getting started</NavigationMenuTrigger>
