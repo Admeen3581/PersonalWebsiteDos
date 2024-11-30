@@ -78,7 +78,7 @@ function Home() {
               {/*Title Text*/}
               <GradualSpacing
                   text="Adam Long"
-                  className="font-display text-7xl text-white pt-52 font-avalors shadow-inner"
+                  className="font-display text-7xl text-white pt-56 font-avalors shadow-inner"
                   duration={2.0}
                   delayMultiple={0.09}
               />
