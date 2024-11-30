@@ -77,10 +77,16 @@ function Home() {
 
               {/*Title Text*/}
               <GradualSpacing
-                  text="Adam Long"
+                  text="adam long"
                   className="font-display text-7xl text-white pt-56 font-avalors shadow-inner"
                   duration={2.0}
                   delayMultiple={0.09}
+              />
+              <GradualSpacing
+              text="Leader - Visionary - Speaker"
+              className="font-display text-lg text-white pt-8 font-avalors shadow-inner"
+              duration={2.0}
+              delayMultiple={0.03}
               />
 
               {/* Badge Icon */}
