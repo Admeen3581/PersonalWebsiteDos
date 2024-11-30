@@ -14,17 +14,17 @@ import {
 } from '@/components/ui/navigation-menu'
 import Link from 'next/link'
 import ListItem from '@/components/ui/navigation-menu-listitem'
-import {elements} from '@/lib/navBarElements'
+import {leftElements} from '@/lib/navBarElements'
 
 
 //Function
-const HomePageNavbar = () => {
+const LeftHomePageNavbar = () => {
     return (
-        <div className="text-white p-4 ml-10">
+        <div className="text-white p-4 mr-10">
             <NavigationMenu>
                 <NavigationMenuList>
                     <NavigationMenuItem>
-                        <NavigationMenuTrigger className="hover:text-blue-400 font-size-20 ">Getting started</NavigationMenuTrigger>
+                        <NavigationMenuTrigger className="hover:text-blue-400 font-size-20 font-dagger">Getting started</NavigationMenuTrigger>
                         <NavigationMenuContent className='bg-gray-800 h-52'>
                             <ul className="grid gap-3 p-6 bg-gray-700 rounded-md shadow-lg md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                                 <li className="row-span-3">
@@ -55,16 +55,16 @@ const HomePageNavbar = () => {
                         </NavigationMenuContent>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
-                        <NavigationMenuTrigger className="hover:text-blue-400">Components</NavigationMenuTrigger>
+                        <NavigationMenuTrigger className="hover:text-blue-400 font-size-20 font-dagger">Components</NavigationMenuTrigger>
                         <NavigationMenuContent className='bg-gray-800 h-52'>
                             <ul className="grid w-[400px] gap-3 p-4 bg-gray-700 rounded-md shadow-lg md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-                                {elements.map(component => (
+                                {leftElements.map(component => (
                                     <ListItem
                                         key={component.title}
                                         title={component.title}
                                         href={component.href}
                                     >
-                                        {component.description}
+                                        {component.desc}
                                     </ListItem>
                                 ))}
                             </ul>
@@ -76,4 +76,4 @@ const HomePageNavbar = () => {
     )
 }
 
-export default HomePageNavbar;
+export default LeftHomePageNavbar;

@@ -19,7 +19,8 @@ const config: Config = {
   		},
   		fontFamily: {
   			ethnocentric: ["Ethnocentric", "sans-serif"],
-  			bluehighway: ["Blue Highway", "sans-serif"]
+  			bluehighway: ["Blue Highway", "sans-serif"],
+			dagger: ["Daggersquare", "sans-serif"]
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
@@ -45,7 +46,9 @@ const config: Config = {
 			slideName: 'slideName 2.5s forwards',
 		},
 		animationDelay: {
+			  '0.5s' : '0.5s',
 			  '1.5s' : '1.5',
+			'1.7s' : '1.75s',
 			'2.0s' : '2.0s',
 			'2.5s': '2.5s',
 		}
