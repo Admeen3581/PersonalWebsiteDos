@@ -1,5 +1,11 @@
+/**
+ * @Author Dennis Ollhoff & Adam Long
+ * @copyright All rights reserved.
+ */
+
 import {NavigationMenuLink} from "@radix-ui/react-navigation-menu";
 import {ny} from "@/lib/utils";
+import React from "react";
 
 
 const ListItem = React.forwardRef<
@@ -27,3 +33,5 @@ const ListItem = React.forwardRef<
     )
 })
 ListItem.displayName = 'ListItem'
+
+export default ListItem;
