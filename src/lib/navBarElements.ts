@@ -25,28 +25,38 @@ export const rightElements: { title: string, href: string, desc: string }[] = [
     },
 ];
 
-export const leftElements: {title: string, href: string, desc: string}[] = [
+export const showcaseElements: {title: string, href: string, desc: string}[] = [
     {
-        title: 'Scroll-area',
-        href: '/docs/primitives/scroll-area',
-        desc: 'Visually or semantically separates content.',
+        title: 'Work Experience',
+        href: '/',
+        desc: 'An overview of my past roles and the professional experience I\'ve gained.',
     },
     {
-        title: 'Tabs',
-        href: '/docs/primitives/tabs',
-        desc:
-            'A set of layered sections of content—known as tab panels—that are displayed one at a time.',
+        title: 'Education',
+        href: '/',
+        desc: 'Details of my academic background and my contributions to TXST',
     },
     {
-        title: 'Tooltip',
-        href: '/docs/primitives/tooltip',
-        desc:
-            'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
+        title: 'Gallery',
+        href: '/',
+        desc: 'A collection of my projects, creative works, and milestones that define my journey.',
     },
     {
-        title: 'Progress',
-        href: '/docs/primitives/progress',
-        desc:
-            'Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.',
+        title: 'Blog',
+        href: '/',
+        desc: 'Sharing insights, ideas, and experiences through written reflections.',
+    },
+];
+
+export const aboutMeElements: {title: string, href: string, desc: string}[] = [
+    {
+        title: 'Philosophies',
+        href: '/',
+        desc: 'A summary of guiding principles that shape my approach to life.',
+    },
+    {
+        title: 'Interests',
+        href: '/',
+        desc: 'The activities that fuel my curiosity and passion.',
     },
 ];

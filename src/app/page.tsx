@@ -47,7 +47,7 @@ function Home() {
           {/* Foreground Layer */}
           <div className="relative z-30 flex flex-col items-center justify-center h-full">
               {/*Nav Bar Layer*/}
-              <div className="pt-20 animate-slideName delay-[1.7s] inline-flex items-center">
+              <div className="relative z-40 pt-20 animate-slideName delay-[1.7s] inline-flex items-center">
 
                   <LeftHomePageNavbar/>
 

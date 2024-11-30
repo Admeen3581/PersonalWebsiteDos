@@ -14,7 +14,7 @@ import {
 } from '@/components/ui/navigation-menu'
 import Link from 'next/link'
 import ListItem from '@/components/ui/navigation-menu-listitem'
-import {leftElements} from '@/lib/navBarElements'
+import {aboutMeElements, showcaseElements} from '@/lib/navBarElements'
 
 
 //Function
@@ -48,9 +48,6 @@ const LeftHomePageNavbar = () => {
                                                 &emsp;B.S. Computer Science
                                             </p>
                                             <p className="text-gray-300 text-sm leading-tight">
-                                                &emsp;IT Representative
-                                            </p>
-                                            <p className="text-gray-300 text-sm leading-tight">
                                                 &emsp;TXST Waterski
                                             </p>
                                             <p className="text-gray-300 text-sm leading-tight">
@@ -59,12 +56,15 @@ const LeftHomePageNavbar = () => {
                                         </Link>
                                     </NavigationMenuLink>
                                 </li>
-                                <ListItem href="/" title="Philosophies">
-                                    A collection of guiding principles that shape my approach to life.
-                                </ListItem>
-                                <ListItem href="/" title="Interests">
-                                    The activities that fuel my curiosity and passion.
-                                </ListItem>
+                                {aboutMeElements.map(component => (
+                                    <ListItem
+                                        key={component.title}
+                                        title={component.title}
+                                        href={component.href}
+                                    >
+                                        {component.desc}
+                                    </ListItem>
+                                ))}
                             </ul>
                         </NavigationMenuContent>
                     </NavigationMenuItem>
@@ -72,7 +72,7 @@ const LeftHomePageNavbar = () => {
                         <NavigationMenuTrigger className="hover:text-blue-400 text-lg font-dagger">Showcase</NavigationMenuTrigger>
                         <NavigationMenuContent className='bg-gray-800'>
                             <ul className="grid w-[400px] gap-3 p-4 bg-gray-700 rounded-md shadow-lg md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-                                {leftElements.map(component => (
+                                {showcaseElements.map(component => (
                                     <ListItem
                                         key={component.title}
                                         title={component.title}
