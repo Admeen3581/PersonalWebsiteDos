@@ -25,38 +25,52 @@ const LeftHomePageNavbar = () => {
                 <NavigationMenuList>
                     <NavigationMenuItem>
                         <NavigationMenuTrigger className="hover:text-blue-400 text-lg font-dagger pr-16">About Me</NavigationMenuTrigger>
-                        <NavigationMenuContent className='bg-gray-800 h-56'>
+                        <NavigationMenuContent className='bg-gray-800'>
                             <ul className="grid gap-3 p-6 bg-gray-700 rounded-md shadow-lg md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                                <li className="row-span-3">
+                                <li className="row-span-2">
                                     <NavigationMenuLink asChild>
                                         <Link
-                                            className="from-gray-600 to-gray-800 flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b p-6 no-underline outline-none hover:shadow-md"
+                                            className="from-gray-600 to-gray-800 flex w-full select-none flex-col justify-end rounded-md bg-gradient-to-b p-3 no-underline outline-none hover:shadow-md"
                                             href="/"
                                         >
-                                            <div className="mb-2 mt-4 text-lg font-medium">nyxb/ui</div>
+                                            <div className="mb-2 text-lg font-bold">Who Am I?</div>
+                                            <p className="text-gray-300 text-sm font-semibold leading-tight">
+                                                Dell Technologies
+                                            </p>
                                             <p className="text-gray-300 text-sm leading-tight">
-                                                Beautifully designed components that you can copy and
-                                                paste into your apps. Accessible. Customizable. Open
-                                                Source.
+                                                &emsp;SWE Intern
+                                            </p>
+                                            <br/>
+                                            <p className="text-gray-300 text-sm font-semibold leading-tight">
+                                                Texas State University
+                                            </p>
+                                            <p className="text-gray-300 text-sm leading-tight">
+                                                &emsp;B.S. Computer Science
+                                            </p>
+                                            <p className="text-gray-300 text-sm leading-tight">
+                                                &emsp;IT Representative
+                                            </p>
+                                            <p className="text-gray-300 text-sm leading-tight">
+                                                &emsp;TXST Waterski
+                                            </p>
+                                            <p className="text-gray-300 text-sm leading-tight">
+                                                &emsp;TXST Senator
                                             </p>
                                         </Link>
                                     </NavigationMenuLink>
                                 </li>
-                                <ListItem href="/docs" title="Introduction">
-                                    Re-usable components built using Radix UI and Tailwind CSS.
+                                <ListItem href="/" title="Philosophies">
+                                    A collection of guiding principles that shape my approach to life.
                                 </ListItem>
-                                <ListItem href="/docs/installation" title="Installation">
-                                    How to install dependencies and structure your app.
-                                </ListItem>
-                                <ListItem href="/docs/primitives/typography" title="Typography">
-                                    Styles for headings, paragraphs, lists...etc
+                                <ListItem href="/" title="Interests">
+                                    The activities that fuel my curiosity and passion.
                                 </ListItem>
                             </ul>
                         </NavigationMenuContent>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
                         <NavigationMenuTrigger className="hover:text-blue-400 text-lg font-dagger">Showcase</NavigationMenuTrigger>
-                        <NavigationMenuContent className='bg-gray-800 h-56'>
+                        <NavigationMenuContent className='bg-gray-800'>
                             <ul className="grid w-[400px] gap-3 p-4 bg-gray-700 rounded-md shadow-lg md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                                 {leftElements.map(component => (
                                     <ListItem

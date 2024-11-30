@@ -32,7 +32,7 @@ function Home() {
                   className=""
                   fill
               />
-              <div className="absolute inset-0 bg-black opacity-65 z-10"></div>
+              <div className="absolute inset-0 bg-black opacity-70 z-10"></div>
               <Particles
                   quantity={800}
                   color="#FFFFFF"
@@ -78,7 +78,7 @@ function Home() {
               {/*Title Text*/}
               <GradualSpacing
                   text="adam long"
-                  className="font-display text-7xl text-white pt-56 font-avalors shadow-inner"
+                  className="font-display text-7xl text-white md:pt-64 font-avalors shadow-inner"
                   duration={2.0}
                   delayMultiple={0.09}
               />
