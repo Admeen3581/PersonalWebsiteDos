@@ -23,6 +23,7 @@ const config: Config = {
 			dagger: ["Daggersquare", "sans-serif"],
 			aptos: ['Aptos', 'monospace'],
 			space: ['Space', 'monospace'],
+			avalors: ['Avalors', 'monosapce'],
   		},
   		borderRadius: {
   			lg: 'var(--radius)',

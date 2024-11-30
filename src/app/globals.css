@@ -37,6 +37,11 @@ body {
   src: url("/fonts/Spaceline.otf") format("opentype");
 }
 
+@font-face {
+  font-family: 'Avalors';
+  src: url("/fonts/Avalors.otf") format('opentype');
+}
+
 @layer base {
   :root {
     --radius: 0.5rem;
