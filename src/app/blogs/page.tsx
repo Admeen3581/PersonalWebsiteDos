@@ -8,6 +8,7 @@ import GradualSpacing from "@/components/ui/gradualSpacing";
 import {blogElements} from "@/app/blogs/blogElements";
 import Link from "next/link";
 import Image from "next/image";
+import ScrollToTop from "@/components/ui/scrollToTop";
 
 function Blogs() {
     return (
@@ -62,7 +63,9 @@ function Blogs() {
                         </Link>
                     ))}
                 </div>
-
+                <div>
+                    <ScrollToTop/>
+                </div>
             </div>
         </div>
     );
