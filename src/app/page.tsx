@@ -54,15 +54,12 @@ function Home() {
                   <NeonGradientCard
                       className="max-w-sm flex items-center justify-center text-center rounded-full pointer-events-none"
                       borderRadius={100}
-                      borderSize={15}
+                      borderSize={13.5}
                       neonColors={{
                           firstColor: "#073873",
                           secondColor: "#FFFFFF"
                       }}
                   >
-                      {/*<span className=" text-transparent">*/}
-                      {/*    AL*/}
-                      {/*</span>*/}
                       <Image
                           src="/pictures/al18.jpg"
                           className='rounded-full'
