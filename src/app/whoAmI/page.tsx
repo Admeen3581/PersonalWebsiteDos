@@ -25,7 +25,7 @@ function WhoAmI() {
 
                     {/* Profile Picture */}
                     <div className="relative flex flex-col mt-40">
-                        <div className="relative lg:w-[300px] lg:h-[300px] rounded-full overflow-hidden border-4 border-blue-500 shadow-lg">
+                        <div className="relative lg:w-[320px] lg:h-[320px] rounded-full overflow-hidden border-4 border-blue-500 shadow-lg">
                             <Image
                                 src="/pictures/templateImage.jpg"
                                 alt="Adam Long Headshot"
@@ -39,67 +39,69 @@ function WhoAmI() {
                     </div>
 
                     {/* Summary Section */}
-                    <div className="md:max-w-5xl lg:max-w-7xl mx-auto my-20 flex text-center items-center">
-                        <Link className='p-4 flex flex-col items-center' href='https://txst.edu'>
+                    <div className="grid grid-cols-4 gap-8 md:max-w-screen-lg lg:max-w-screen-xl xl:max-w-screen-2xl mx-auto my-20 flex text-center items-center">
+                        <Link className='p-6 flex flex-col items-center' href={textElements[0].href}>
                             <GraduationCap size={128}/>
                             <h2 className="text-xl md:text-2xl font-semibold text-blue-400 pt-3">
-                                Texas State University Student
+                                {textElements[0].title}
                             </h2>
                             <p className="mt-4 text-gray-300 leading-relaxed">
-                                {textElements[0].title}
+                                {textElements[0].desc}
                             </p>
                         </Link>
-                        <div className="grid grid-cols-2 gap-4">
-                            <div className='p-4 flex flex-col items-center'>
+                        <div className="grid grid-cols-1 gap-16 p-6">
+                            <div className='flex flex-col items-center'>
                                 <Computer size={128}/>
                                 <h2 className="text-xl md:text-2xl font-semibold text-blue-400 pt-3">
-                                    About Me
+                                    {textElements[1].title}
                                 </h2>
                                 <p className="mt-4 text-gray-300 leading-relaxed">
-                                    Briefly introduce yourself here. Share a little about your background,
-                                    passions, and what drives you. Keep it concise and engaging!
+                                    {textElements[1].desc}
+
                                 </p>
                             </div>
-                            <div className='p-4 flex flex-col items-center'>
+                            <div className='flex flex-col items-center'>
                                <BicepsFlexed size={128}/>
                                 <h2 className="text-xl md:text-2xl font-semibold text-blue-400 pt-3">
-                                    About Me
+                                    {textElements[2].title}
                                 </h2>
                                 <p className="mt-4 text-gray-300 leading-relaxed">
-                                    Briefly introduce yourself here. Share a little about your background,
-                                    passions, and what drives you. Keep it concise and engaging!
-                                </p>
-                            </div>
-                            <div className='p-4 flex flex-col items-center'>
-                                <Briefcase size={128}/>
-                                <h2 className="text-xl md:text-2xl font-semibold text-blue-400 pt-3">
-                                    About Me
-                                </h2>
-                                <p className="mt-4 text-gray-300 leading-relaxed">
-                                    Briefly introduce yourself here. Share a little about your background,
-                                    passions, and what drives you. Keep it concise and engaging!
-                                </p>
-                            </div>
-                            <div className='p-4 flex flex-col items-center'>
-                                <NotebookPen size={128}/>
-                                <h2 className="text-xl md:text-2xl font-semibold text-blue-400 pt-3">
-                                    About Me
-                                </h2>
-                                <p className="mt-4 text-gray-300 leading-relaxed">
-                                    Briefly introduce yourself here. Share a little about your background,
-                                    passions, and what drives you. Keep it concise and engaging!
+                                    {textElements[2].desc}
+
                                 </p>
                             </div>
                         </div>
-                        <div className='p-4 flex flex-col items-center'>
+                        <div className='grid grid-cols-1 gap-16 p-6 xl:mt-1'>
+                            <div className='flex flex-col items-center'>
+                                <Briefcase size={128}/>
+                                <h2 className="text-xl md:text-2xl font-semibold text-blue-400 pt-3">
+                                    {textElements[3].title}
+                                </h2>
+                                <p className="mt-4 text-gray-300 leading-relaxed">
+                                    {textElements[3].desc}
+
+                                </p>
+                            </div>
+                            <div className='flex flex-col items-center md:mt-4'>
+                                <NotebookPen size={128}/>
+                                <h2 className="text-xl md:text-2xl font-semibold text-blue-400 pt-3">
+                                    {textElements[4].title}
+
+                                </h2>
+                                <p className="mt-4 text-gray-300 leading-relaxed">
+                                    {textElements[4].desc}
+
+                                </p>
+                            </div>
+                        </div>
+                        <div className='p-6 flex flex-col items-center'>
                             <CodeXml size={128}/>
 
                             <h2 className="text-xl md:text-2xl font-semibold text-blue-400">
-                                About Me
+                                {textElements[5].title}
                             </h2>
                             <p className="mt-4 text-gray-300 leading-relaxed">
-                                Briefly introduce yourself here. Share a little about your background,
-                                passions, and what drives you. Keep it concise and engaging!
+                                {textElements[5].desc}
                             </p>
                         </div>
                     </div>
