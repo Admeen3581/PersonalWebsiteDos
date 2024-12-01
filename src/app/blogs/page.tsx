@@ -7,6 +7,7 @@ import {NavbarNonHome} from "@/components/navbarNonHome";
 import GradualSpacing from "@/components/ui/gradualSpacing";
 import {blogElements} from "@/app/blogs/blogElements";
 import Link from "next/link";
+import Image from "next/image";
 
 function Blogs() {
     return (
@@ -39,8 +40,14 @@ function Blogs() {
                 {/*Blog Content*/}
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16 w-10/12 mt-28">
                     {blogElements.map((post) => (
-                        <Link key={post.href} href={post.href} className='bg-blueblack rounded-lg overflow-hidden shadow-lg'>
-                            <img src={post.imgRef} alt={post.title} className="w-full h-48 object-cover rounded-t-lg"/>
+                        <Link key={post.id} href={`/blogs/${post.id}`} className='bg-blueblack rounded-lg overflow-hidden shadow-lg'>
+                            <Image
+                                src={post.imgRef}
+                                alt={post.title + " cover image"}
+                                className="w-full h-48 object-cover rounded-t-lg"
+                                width={4000}
+                                height={4000}
+                            />
                             <div className="p-4">
                                 <p className="text-gray-400 text-sm">
                                     {post.date}
