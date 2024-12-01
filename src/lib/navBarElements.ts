@@ -55,7 +55,7 @@ export const showcaseElements: {title: string, href: string, desc: string}[] = [
 export const aboutMeElements: {title: string, href: string, desc: string}[] = [
     {
         title: 'Philosophies',
-        href: '/',
+        href: '/philosophies',
         desc: 'A summary of guiding principles that shape my approach to life.',
     },
     {
