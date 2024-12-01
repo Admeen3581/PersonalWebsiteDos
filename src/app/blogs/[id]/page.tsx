@@ -6,7 +6,7 @@
 //Imports
 import { blogElements } from '../blogElements';
 
-export default async function BlogPost({ params }: { params: { id: string } })
+export default function BlogPost({ params }: { params: { id: string } })
 {
     const { id } = params;
 
@@ -15,7 +15,7 @@ export default async function BlogPost({ params }: { params: { id: string } })
     }
 
     // Find the blog post based on the ID
-    const blog = blogElements.find((post) => post.id === id);
+    const blog = blogElements.find((post) => post.id === parseInt(id));
 
     if (!blog) {
         return <div>Blog not found</div>;
