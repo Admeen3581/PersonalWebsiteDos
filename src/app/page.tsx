@@ -9,13 +9,13 @@
 //Imports
 import Image from "next/image";
 import Particles from "@/components/ui/particles";
-import GradualSpacing from "@/components/ui/gradual-spacing";
-import {NeonGradientCard} from "@/components/ui/neon-gradient-card";
+import GradualSpacing from "@/components/ui/gradualSpacing";
+import {NeonGradientCard} from "@/components/ui/neonGradientCard";
 import {
     HoverCard,
     HoverCardContent,
     HoverCardTrigger,
-} from "@/components/ui/hover-card"
+} from "@/components/ui/hoverCard"
 import {Link} from "lucide-react";
 import RightHomePageNavbar from "@/components/rightHomePageNavbar";
 import LeftHomePageNavbar from "@/components/leftHomePageNavbar";

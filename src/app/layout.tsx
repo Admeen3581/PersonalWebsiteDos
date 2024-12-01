@@ -1,3 +1,8 @@
+/**
+ * @author Adam Long
+ * @copyright 2024 - All rights reserved.
+ */
+
 import type { Metadata } from "next";
 import "../lib/globals.css";
 

@@ -1,5 +1,5 @@
 /**
- * @Author Dennis Ollhoff & Adam Long
+ * @author Dennis Ollhoff & Adam Long
  * @copyright All rights reserved.
  */
 

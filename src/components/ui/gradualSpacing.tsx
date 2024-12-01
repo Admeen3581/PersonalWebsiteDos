@@ -1,3 +1,8 @@
+/**
+ * @author Dennis Ollhoff & Adam Long
+ * @copyright All rights reserved.
+ */
+
 "use client"
 
 import type { Variants } from "framer-motion"

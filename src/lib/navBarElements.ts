@@ -1,3 +1,8 @@
+/**
+ * @author Adam Long
+ * @copyright 2024 - All rights reserved
+ */
+
 export const resourceElements: { title: string, href: string, desc: string }[] = [
     {
         title: 'Downloadables',

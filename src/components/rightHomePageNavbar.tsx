@@ -11,9 +11,9 @@ import {
     NavigationMenuLink,
     NavigationMenuList,
     NavigationMenuTrigger,
-} from '@/components/ui/navigation-menu'
+} from '@/components/ui/navigationMenu'
 import Link from 'next/link'
-import ListItem from '@/components/ui/navigation-menu-listitem'
+import ListItem from '@/components/ui/navigationMenuListitem'
 import {contactElements, resourceElements} from '@/lib/navBarElements'
 
 
