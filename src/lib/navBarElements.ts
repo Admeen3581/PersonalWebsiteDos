@@ -60,7 +60,7 @@ export const aboutMeElements: {title: string, href: string, desc: string}[] = [
     },
     {
         title: 'Interests',
-        href: '/',
+        href: '/interests',
         desc: 'The activities that fuel my curiosity and passion.',
     },
 ];
