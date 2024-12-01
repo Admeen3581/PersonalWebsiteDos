@@ -40,7 +40,7 @@ function Home() {
                   size={0.8}
                   vx={0.1}
                   vy={-0.1}
-                  className="absolute inset-0 opacity-70 z-20"
+                  className="absolute inset-0 opacity-80 z-20"
               />
           </div>
 
