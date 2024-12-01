@@ -6,7 +6,7 @@
 export const resourceElements: { title: string, href: string, desc: string }[] = [
     {
         title: 'Downloadables',
-        href: '/',
+        href: '/downloadables',
         desc: 'Downloadable assets for clients and other purposes.',
     },
     {
