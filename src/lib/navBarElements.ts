@@ -1,27 +1,26 @@
-export const rightElements: { title: string, href: string, desc: string }[] = [
+export const resourceElements: { title: string, href: string, desc: string }[] = [
     {
-        title: 'Alert Dialog',
-        href: '/docs/primitives/alert-dialog',
-        desc:
-            'A modal dialog that interrupts the user with important content and expects a response.',
+        title: 'Downloadables',
+        href: '/',
+        desc: 'Downloadable assets for clients and other purposes.',
     },
     {
-        title: 'Hover Card',
-        href: '/docs/primitives/hover-card',
-        desc:
-            'For sighted users to preview content available behind a link.',
+        title: 'This Repo',
+        href: 'https://github.com/Admeen3581/PersonalWebsiteDos',
+        desc: 'GitHub link to the source code for this website.',
+    },
+];
+
+export const contactElements: { title: string, href: string, desc: string }[] = [
+    {
+        title: 'Off the clock',
+        href: '/',
+        desc: 'Social platform links for friends & family members.',
     },
     {
-        title: 'Gang',
-        href: '/docs/primitives/progress',
-        desc:
-            'Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.',
-    },
-    {
-        title: 'Real Title',
-        href: '/docs/primitives/progress',
-        desc:
-            'Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.',
+        title: 'On the clock',
+        href: '/',
+        desc: 'Contact information for co-workers & business partners.',
     },
 ];
 
@@ -39,7 +38,7 @@ export const showcaseElements: {title: string, href: string, desc: string}[] = [
     {
         title: 'Gallery',
         href: '/',
-        desc: 'A collection of my projects, creative works, and milestones that define my journey.',
+        desc: 'A collection of my projects, travels, and milestones that define my journey.',
     },
     {
         title: 'Blog',

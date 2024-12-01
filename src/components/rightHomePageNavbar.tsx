@@ -14,7 +14,7 @@ import {
 } from '@/components/ui/navigation-menu'
 import Link from 'next/link'
 import ListItem from '@/components/ui/navigation-menu-listitem'
-import {rightElements} from '@/lib/navBarElements'
+import {contactElements, resourceElements} from '@/lib/navBarElements'
 
 
 //Function
@@ -30,35 +30,37 @@ const RightHomePageNavbar = () => {
                                 <li className="row-span-3">
                                     <NavigationMenuLink asChild>
                                         <Link
-                                            className="from-gray-600 to-gray-800 flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b p-6 no-underline outline-none hover:shadow-md"
+                                            className="from-gray-600 to-gray-800 flex w-full select-none flex-col justify-end rounded-md bg-gradient-to-b p-3 no-underline outline-none hover:shadow-md"
                                             href="/"
                                         >
-                                            <div className="mb-2 mt-4 text-lg font-medium">nyxb/ui</div>
+                                            <div className="mb-2 text-lg font-bold">Resume</div>
                                             <p className="text-gray-300 text-sm leading-tight">
-                                                Beautifully designed components that you can copy and
-                                                paste into your apps. Accessible. Customizable. Open
-                                                Source.
+                                                My up-to-date, general purpose resume listing my qualifications within the field.
+                                            </p>
+                                            <br/>
+                                            <p className="text-gray-300 text-sm leading-tight italic">
+                                                Click to download
                                             </p>
                                         </Link>
                                     </NavigationMenuLink>
                                 </li>
-                                <ListItem href="/docs" title="Introduction">
-                                    Re-usable components built using Radix UI and Tailwind CSS.
-                                </ListItem>
-                                <ListItem href="/docs/installation" title="Installation">
-                                    How to install dependencies and structure your app.
-                                </ListItem>
-                                <ListItem href="/docs/primitives/typography" title="Typography">
-                                    Styles for headings, paragraphs, lists...etc
-                                </ListItem>
+                                {resourceElements.map(component => (
+                                    <ListItem
+                                        key={component.title}
+                                        title={component.title}
+                                        href={component.href}
+                                    >
+                                        {component.desc}
+                                    </ListItem>
+                                ))}
                             </ul>
                         </NavigationMenuContent>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
                         <NavigationMenuTrigger className="hover:text-blue-400 text-lg font-dagger">Contact</NavigationMenuTrigger>
                         <NavigationMenuContent className='bg-gray-800'>
-                            <ul className="grid w-[400px] gap-3 p-4 bg-gray-700 rounded-md shadow-lg md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-                                {rightElements.map(component => (
+                            <ul className="grid w-[250px] gap-3 p-6 bg-gray-700 rounded-md shadow-lg md:w-[400px] md:grid-cols-2 lg:w-[500px]">
+                                {contactElements.map(component => (
                                     <ListItem
                                         key={component.title}
                                         title={component.title}
