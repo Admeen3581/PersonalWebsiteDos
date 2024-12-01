@@ -1,9 +1,11 @@
-import Particles from "@/components/ui/particles";
-
 /**
  * @author Adam Long
  * @copyright 2024 - All rights reserved.
  */
+
+//Imports
+import Particles from "@/components/ui/particles";
+
 
 export const BackgroundNonHome = () => {
     return (
