@@ -31,6 +31,7 @@ export default function BlogPost({ params }: { params: { id: string } })
     }
     else
     {
+        const blogContent = blog.content.split('\n');
         //Styled component
         return (
             <div className="relative min-h-screen min-w-screen overflow-hidden">
@@ -70,10 +71,17 @@ export default function BlogPost({ params }: { params: { id: string } })
                                 height={1080}
                             />
                         </div>
-
                         {/* Blog Content */}
                         <div className="mt-12 text-gray-300 leading-relaxed text-lg">
-                            {blog.content}
+                            {blogContent.map((section) => (
+                                <div key={Math.random()}> {/*Ahh yes, peak programming*/}
+                                    <div>
+                                        &emsp;{section}
+                                        <br/>
+                                        <br/>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>
