@@ -42,7 +42,7 @@ export const showcaseElements: {title: string, href: string, desc: string}[] = [
     },
     {
         title: 'Gallery',
-        href: '/',
+        href: '/gallery',
         desc: 'A collection of my projects, travels, and milestones that define my journey.',
     },
     {
