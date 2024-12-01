@@ -24,7 +24,7 @@ export const contactElements: { title: string, href: string, desc: string }[] = 
     },
     {
         title: 'On the clock',
-        href: '/',
+        href: '/contact/professional',
         desc: 'Contact information for co-workers & business partners.',
     },
 ];
