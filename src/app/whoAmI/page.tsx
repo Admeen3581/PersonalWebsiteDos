@@ -33,13 +33,13 @@ function WhoAmI() {
                                 className="object-cover"
                             />
                         </div>
-                        <h1 className="mt-4 text-2xl md:text-3xl font-bold text-center">
-                            Adam Long
+                        <h1 className="mt-4 text-2xl md:text-3xl font-bold text-center font-avalors">
+                            adam Long
                         </h1>
                     </div>
 
                     {/* Summary Section */}
-                    <div className="grid grid-cols-4 gap-8 md:max-w-screen-lg lg:max-w-screen-xl xl:max-w-screen-2xl mx-auto my-20 flex text-center items-center">
+                    <div className="grid grid-cols-4 gap-8 md:max-w-screen-lg lg:max-w-screen-xl xl:max-w-screen-2xl mx-auto my-20 flex text-center items-center font-aptos">
                         <Link className='p-6 flex flex-col items-center' href={textElements[0].href}>
                             <GraduationCap size={128}/>
                             <h2 className="text-xl md:text-2xl font-semibold text-blue-400 pt-3">
@@ -71,7 +71,7 @@ function WhoAmI() {
                                 </p>
                             </div>
                         </div>
-                        <div className='grid grid-cols-1 gap-16 p-6 xl:mt-1'>
+                        <div className='grid grid-cols-1 gap-16 p-6'>
                             <div className='flex flex-col items-center'>
                                 <Briefcase size={128}/>
                                 <h2 className="text-xl md:text-2xl font-semibold text-blue-400 pt-3">
