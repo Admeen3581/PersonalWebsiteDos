@@ -33,7 +33,7 @@ const InterestCard = ({props} : { props : InterestProps }) => {
                     <h1 className='text-gray-300 text-2xl font-semibold leading-relaxed pt-4'>
                         {props.title}
                     </h1>
-                    <p className="max-w-lg text-gray-300 text-lg leading-relaxed">
+                    <p className="text-gray-300 text-lg leading-relaxed">
                         {props.desc}
                     </p>
                 </div>
