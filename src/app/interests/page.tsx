@@ -2,11 +2,16 @@
  * @author Adam Long
  * @copyright 2024 - All rights reserved.
  */
+
+//Imports
 import {BackgroundNonHome} from "@/components/backgroundNonHome";
 import {NavbarNonHome} from "@/components/navbarNonHome";
 import GradualSpacing from "@/components/ui/gradualSpacing";
+import InterestCard from "@/components/interestCard";
+import {interestElements} from "@/app/interests/interestElements";
 
 function Interests() {
+
     return (
         <div className="relative min-h-screen min-w-screen overflow-hidden">
             {/*Background component*/}
@@ -34,7 +39,13 @@ function Interests() {
                     </div>
                 </div>
                 {/*Page Content*/}
-
+                <div className="w-10/12 px-8 py-20 space-y-32 mt-24">
+                    {interestElements.map((interest) => (
+                        <div key={interest.title}>
+                            <InterestCard props={interest}/>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     );
