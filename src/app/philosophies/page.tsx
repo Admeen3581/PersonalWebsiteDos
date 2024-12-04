@@ -5,6 +5,8 @@
 import {BackgroundNonHome} from "@/components/backgroundNonHome";
 import {NavbarNonHome} from "@/components/navbarNonHome";
 import GradualSpacing from "@/components/ui/gradualSpacing";
+import {philosophyElements} from "@/app/philosophies/philosophyElements";
+import PhilosophyCard from "@/components/philosophyCard";
 
 function Philosophies() {
     return (
@@ -24,7 +26,7 @@ function Philosophies() {
                             duration={2.0}
                         />
                         <br/>
-                        <div className='bg-gray-900 h-1 w-full'></div>
+                        <div className='bg-gray-900 h-1 w-full'/>
                         <br/>
                         <GradualSpacing
                             text="How I live my life"
@@ -34,11 +36,20 @@ function Philosophies() {
                     </div>
                 </div>
                 {/*Page Content*/}
-                <div className="w-10/12 mt-24">
-                    <h1 className='text-2xl text-white shadow-inner text-center font-aptos'>
+                <div className="relative flex flex-col items-center justify-center w-9/12 mt-32">
+                    <h1 className='text-2xl shadow-inner text-center font-aptos text-gray-300 leading-relaxed'>
                         My life philosophies are guided by lessons I have learned. They are written on my mirror, so
                         that I can be a reflection of who I want to be.
                     </h1>
+                    <div className='bg-gray-900 h-1 w-full m-8'/>
+                    {/*Row-By-Row Cards*/}
+                    <div className='mt-10 w-full'>
+                        {philosophyElements.map((elements) => (
+                            <div key={elements.title}>
+                                <PhilosophyCard prop={elements}/>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>
