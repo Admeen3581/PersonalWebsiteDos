@@ -38,7 +38,7 @@ function Downloadables() {
                 <div className='md:pt-20'>
                     {downloadElements.map((element) => (
                         <div key={element.title} className='text-gray-300 text-center text-2xl font-semibold font-aptos py-4 hover:text-blue-600'>
-                            <a href={element.link}>{element.title}</a>
+                            <li className='list-disc'><a href={element.link}>{element.title}</a></li>
                         </div>
                     ))}
                 </div>
