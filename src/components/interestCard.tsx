@@ -6,14 +6,7 @@
 
 //Imports
 import Image from 'next/Image';
-
-export interface InterestProps {
-    variant : number,
-    title : string,
-    desc : string,
-    imgRef : string,
-    imgAlt? : string,
-}
+import {InterestProps} from "@/app/interests/interestElements";
 
 const InterestCard = ({props} : { props : InterestProps }) => {
 

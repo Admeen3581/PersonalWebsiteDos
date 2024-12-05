@@ -3,8 +3,13 @@
  * @copyright 2024 - All rights reserved.
  */
 
-//Imports
-import {InterestProps} from "@/components/interestCard";
+export interface InterestProps {
+    variant : number,
+    title : string,
+    desc : string,
+    imgRef : string,
+    imgAlt? : string,
+}
 
 export const interestElements: InterestProps[] = [
     {
