@@ -14,11 +14,11 @@ export interface philosophyProps {
 
 const PhilosophyCard = ({prop} : {prop : philosophyProps}) => {
     return (
-        <div className='relative grid grid-cols-3 flex flex-col items-center justify-center text-center'>
+        <div className='relative grid grid-cols-3 gap-8 flex flex-col items-center justify-center text-center'>
             <div className="flex p-8 items-center">
                 <prop.icon
-                    size={128}
                     color={'white'}
+                    className='min-w-24 min-h-24'
                 />
                 <h1 className='text-gray-300 text-2xl leading-relaxed font-aptos shadow-inner pl-10'>
                     {prop.title}

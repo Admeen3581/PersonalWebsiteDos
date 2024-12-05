@@ -45,7 +45,7 @@ function Philosophies() {
                     {/*Row-By-Row Cards*/}
                     <div className='mt-10 w-full'>
                         {philosophyElements.map((elements) => (
-                            <div key={elements.title}>
+                            <div key={elements.title} className='p-4'>
                                 <PhilosophyCard prop={elements}/>
                             </div>
                         ))}
