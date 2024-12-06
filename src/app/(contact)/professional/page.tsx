@@ -5,6 +5,9 @@
 import {BackgroundNonHome} from "@/components/backgroundNonHome";
 import {NavbarNonHome} from "@/components/navbarNonHome";
 import GradualSpacing from "@/components/ui/gradualSpacing";
+import {contactElements} from "@/app/(contact)/contactElements";
+import Image from "next/image";
+import Link from "next/link";
 
 function ContactProfessional() {
     return (
@@ -16,7 +19,7 @@ function ContactProfessional() {
                 {/*Navbar component*/}
                 <NavbarNonHome/>
                 {/*Heading*/}
-                <div className='grid grid-cols-4 pt-20 ml-20'>
+                <div className='grid grid-cols-4 pt-20 ml-16'>
                     <div className='flex flex-col items-start'>
                         <GradualSpacing
                             text="CONTACT"
@@ -34,8 +37,22 @@ function ContactProfessional() {
                     </div>
                 </div>
                 {/*Page Content*/}
-                <div className='md:pt-64'>
-
+                <div className='relative grid grid-cols-6 items-center justify-center flex flex-col text-black text-center font-aptos font-semibold pt-24'>
+                    {contactElements.map((element) => (
+                        <Link
+                            key={element.title}
+                            href={element.href}
+                            className='bg-blue-100 p-10 m-4 w-52 h-72 rounded-3xl hover:scale-110 duration-300'
+                        >
+                            <Image
+                                src={element.icon}
+                                alt={`Logo of ${element.title}`}
+                                width={512}
+                                height={512}
+                            />
+                            <h1 className='pt-6'>{element.title}</h1>
+                        </Link>
+                    ))}
                 </div>
             </div>
         </div>
