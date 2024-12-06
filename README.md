@@ -1,34 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Personal Website Dos
+Overview
+Personal Website Dos is a redesigned and enhanced version of my personal website. It was created to learn and implement new technical skills while providing a better online presence. This project serves as an introduction to who I am, showcasing my work, interests, and skills. The site is intended for end-users to explore, but developers may also check out the code if interested.
 
-## Getting Started
+Technologies Used
+Backend: TypeScript with Next.js
+Frontend: React, Tailwind CSS, NyxbUI Library (NyxbUI)
+Other: Vercel for deployment
+Features
+A modern personal website built with the latest technologies.
+A sleek, responsive UI powered by React and Tailwind CSS.
+Integrated with the NyxbUI design system for polished, reusable UI components.
+Installation and Setup
+This project does not require any specific prerequisites other than what is defined in the package.json and package-lock.json files.
 
-First, run the development server:
+To run the project locally:
 
-```bash
+Clone the repository:
+bash
+Copy code
+git clone https://github.com/Admeen3581/PersonalWebsiteDos.git
+cd PersonalWebsiteDos
+Install dependencies:
+bash
+Copy code
+npm install
+Start the development server:
+bash
+Copy code
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The website will be accessible at http://localhost:3000.
+Build and Deployment
+To deploy the project, run the following command:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+bash
+Copy code
+npm run deploy
+This deploys the site to Vercel (see adamlong18.vercel.app).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Contribution
+If you'd like to contribute:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Suggest a feature or improvement.
+Fork the repository, create a feature branch, and open a pull request.
+Features will be reviewed and approved on a case-by-case basis. Unapproved pull requests might not be merged.
+License
+This project is licensed under the MIT License.
 
-## Learn More
+Codebase Structure
+public/: Holds static assets (images, icons, etc.).
+src/: Contains the source code.
+app/: Root of the application code.
+components/: TypeScript components and UI.
+lib/: Backend arrays, interfaces, and utilities.
+Visuals
+The website includes various visual elements (images, UI components, etc.). In the future, there are plans to host them in a separate database.
 
-To learn more about Next.js, take a look at the following resources:
+Known Issues
+None at the moment.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Deployment Platform
+This project is deployed on Vercel. Visit adamlong18.vercel.app to view the live site.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-adamlong18.vercel.app
+Acknowledgments
+Dennis Ollhoff - Creator of NyxbUI, the design system used in this project.
