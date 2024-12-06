@@ -19,12 +19,12 @@ export const resourceElements: { title: string, href: string, desc: string }[] =
 export const contactElements: { title: string, href: string, desc: string }[] = [
     {
         title: 'Off the clock',
-        href: '/contact/casual',
+        href: '/casual',
         desc: 'Social platform links for friends & family members.',
     },
     {
         title: 'On the clock',
-        href: '/contact/professional',
+        href: '/professional',
         desc: 'Contact information for co-workers & business partners.',
     },
 ];

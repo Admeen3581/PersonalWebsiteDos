@@ -7,7 +7,7 @@
 import {BackgroundNonHome} from "@/components/backgroundNonHome";
 import {NavbarNonHome} from "@/components/navbarNonHome";
 import GradualSpacing from "@/components/ui/gradualSpacing";
-import {professionalElements} from "@/app/(contact)/contactElements";
+import {casualElements} from "@/app/(contact)/contactElements";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -32,7 +32,7 @@ function ContactProfessional() {
                         <div className='bg-gray-900 h-1 w-full'/>
                         <br/>
                         <GradualSpacing
-                            text="Let's connect"
+                            text="Gamers Unite"
                             className="font-display text-3xl text-white font-avalors shadow-inner"
                             duration={2.0}
                         />
@@ -40,7 +40,7 @@ function ContactProfessional() {
                 </div>
                 {/*Page Content*/}
                 <div className='relative grid grid-cols-6 items-center justify-center flex flex-col text-black text-center font-aptos font-semibold pt-24'>
-                    {professionalElements.map((element) => (
+                    {casualElements.map((element) => (
                         <Link
                             key={element.title}
                             href={element.href}
