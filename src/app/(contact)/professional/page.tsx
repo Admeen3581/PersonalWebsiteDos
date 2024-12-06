@@ -16,10 +16,10 @@ function ContactProfessional() {
                 {/*Navbar component*/}
                 <NavbarNonHome/>
                 {/*Heading*/}
-                <div className='grid grid-cols-4 pt-20'>
+                <div className='grid grid-cols-4 pt-20 ml-20'>
                     <div className='flex flex-col items-start'>
                         <GradualSpacing
-                            text="DOWNLOADS"
+                            text="CONTACT"
                             className="font-display text-sm text-white font-avalors shadow-inner"
                             duration={2.0}
                         />
@@ -27,7 +27,7 @@ function ContactProfessional() {
                         <div className='bg-gray-900 h-1 w-full'/>
                         <br/>
                         <GradualSpacing
-                            text="All my links"
+                            text="Let's connect"
                             className="font-display text-3xl text-white font-avalors shadow-inner"
                             duration={2.0}
                         />
