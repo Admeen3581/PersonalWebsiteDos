@@ -37,7 +37,6 @@ function Gallery() {
                         />
                     </div>
                 </div>
-                Blog Content
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-16 w-10/12 mt-28 pointer-events-none">
                     {galleryElements.map((pic) => (
                         <div key={pic.title}>
