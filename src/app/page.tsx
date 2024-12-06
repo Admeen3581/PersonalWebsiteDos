@@ -27,7 +27,7 @@ function Home() {
           {/* Background Layer */}
           <div className="absolute inset-0">
               <Image
-                  src="/conny-schneider-abstract.jpg"
+                  src="pictures/conny-schneider-abstract.jpg"
                   alt="background image"
                   className=""
                   fill
