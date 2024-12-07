@@ -5,7 +5,7 @@
  */
 
 //Imports
-import Image from 'next/Image';
+import Image from 'next/image';
 import {InterestProps} from "@/app/(aboutme)/interests/interestElements";
 
 const InterestCard = ({props} : { props : InterestProps }) => {
