@@ -2,6 +2,8 @@
  * @author Adam Long
  * @copyright 2024 - All rights reserved.
  */
+
+//Imports
 import {BackgroundNonHome} from "@/components/backgroundNonHome";
 import {NavbarNonHome} from "@/components/navbarNonHome";
 import GradualSpacing from "@/components/ui/gradualSpacing";

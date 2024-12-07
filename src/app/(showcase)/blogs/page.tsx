@@ -2,10 +2,12 @@
  * @author Adam Long
  * @copyright 2024 - All rights reserved.
  */
+
+//Imports
 import {BackgroundNonHome} from "@/components/backgroundNonHome";
 import {NavbarNonHome} from "@/components/navbarNonHome";
 import GradualSpacing from "@/components/ui/gradualSpacing";
-import {blogElements} from "@/app/blogs/blogElements";
+import { blogElements } from "@/app/(showcase)/blogs/blogElements";
 import Link from "next/link";
 import Image from "next/image";
 import ScrollToTop from "@/components/ui/scrollToTop";
@@ -41,7 +43,10 @@ function Blogs() {
                 {/*Blog Content*/}
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16 w-10/12 mt-28">
                     {blogElements.map((post) => (
-                        <Link key={post.id} href={`/blogs/${post.id}`} className='bg-blueblack rounded-lg overflow-hidden shadow-lg'>
+                        <Link
+                            key={post.id} href={`/blogs/${post.id}`}
+                            className='bg-blueblack rounded-lg overflow-hidden shadow-lg hover:scale-110 hover:rotate-6 duration-300'
+                        >
                             <Image
                                 src={post.imgRef}
                                 alt={post.title + " cover image"}

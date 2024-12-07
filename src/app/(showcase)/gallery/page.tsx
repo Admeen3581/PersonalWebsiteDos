@@ -8,7 +8,7 @@ import Image from 'next/image';
 import {BackgroundNonHome} from "@/components/backgroundNonHome";
 import {NavbarNonHome} from "@/components/navbarNonHome";
 import GradualSpacing from "@/components/ui/gradualSpacing";
-import {galleryElements} from "@/app/gallery/galleryElements";
+import {galleryElements} from "@/app/(showcase)/gallery/galleryElements";
 
 function Gallery() {
     return (

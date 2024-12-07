@@ -5,7 +5,7 @@
 
 //Imports
 import Image from 'next/image';
-import {workExperience} from "@/app/experience/workExperienceElements";
+import {workExperience} from "@/app/(showcase)/experience/workExperienceElements";
 
 export default function WorkExperienceCard() {
     return (
