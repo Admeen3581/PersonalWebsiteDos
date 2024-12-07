@@ -43,9 +43,9 @@ function Gallery() {
                             <Image
                                 src={pic.imgRef}
                                 alt={pic.title + " cover image"}
-                                className="w-full object-cover rounded-t-lg"
-                                width={4000}
-                                height={4000}
+                                className="w-full h-5/6 object-cover rounded-lg"
+                                width={500}
+                                height={500}
                             />
                             <div className="p-4">
                                 <h3 className="text-xl font-semibold text-white mt-2">
