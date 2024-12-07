@@ -5,7 +5,7 @@
 import {BackgroundNonHome} from "@/components/backgroundNonHome";
 import {NavbarNonHome} from "@/components/navbarNonHome";
 import GradualSpacing from "@/components/ui/gradualSpacing";
-import {downloadElements} from "@/app/downloadables/downloadElements";
+import {downloadElements} from "@/app/(resources)/downloadables/downloadElements";
 
 function Downloadables() {
     return (
