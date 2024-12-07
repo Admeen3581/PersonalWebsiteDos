@@ -47,7 +47,7 @@ export default function BlogPost({ params }: { params: { id: string } })
                             <p className="text-gray-400 text-sm">{blog.date}</p>
                             <div className="flex text-white items-center justify-center w-full">
                                 <div className='flex-none'>
-                                    <Link href='../blogs'>
+                                    <Link href='../../blogs'>
                                         <CircleChevronLeft
                                             className='w-10 h-10 mt-3'
                                         />
