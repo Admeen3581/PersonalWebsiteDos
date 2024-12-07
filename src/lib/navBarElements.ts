@@ -32,7 +32,7 @@ export const contactElements: { title: string, href: string, desc: string }[] = 
 export const showcaseElements: {title: string, href: string, desc: string}[] = [
     {
         title: 'Work Experience',
-        href: '/',
+        href: '/experience',
         desc: 'An overview of my past roles and the professional experience I\'ve gained.',
     },
     {
