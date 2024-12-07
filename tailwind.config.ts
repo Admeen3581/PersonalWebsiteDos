@@ -15,7 +15,7 @@ const config: Config = {
   		colors: {
   			background: 'var(--background)',
   			foreground: 'var(--foreground)',
-  			blueblack: '#021526',
+  			blueblack: '#001334',
   			deepblue: '#03346E',
   			skyblue: '#6EACDA',
   			lightgray: '#E2E2B6'

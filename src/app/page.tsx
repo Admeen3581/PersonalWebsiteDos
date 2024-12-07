@@ -40,7 +40,7 @@ function Home() {
                   size={0.8}
                   vx={0.1}
                   vy={-0.1}
-                  className="absolute inset-0 opacity-70 z-20"
+                  className="absolute inset-0 opacity-80 z-20"
               />
           </div>
 
@@ -75,7 +75,7 @@ function Home() {
               {/*Title Text*/}
               <GradualSpacing
                   text="adam long"
-                  className="font-display text-7xl text-white md:pt-64 font-avalors shadow-inner"
+                  className="text-7xl text-white md:pt-64 font-avalors shadow-inner"
                   duration={2.0}
                   delayMultiple={0.09}
               />
@@ -113,11 +113,7 @@ function Home() {
               </div>
           </div>
       </div>
-
-
   );
 }
 
 export default Home;
-
-//Photo by <a href="https://unsplash.com/@choys_?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Conny Schneider</a> on <a href="https://unsplash.com/photos/a-blue-background-with-lines-and-dots-xuTJZ7uD7PI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
