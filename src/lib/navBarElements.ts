@@ -37,7 +37,7 @@ export const showcaseElements: {title: string, href: string, desc: string}[] = [
     },
     {
         title: 'Education',
-        href: '/',
+        href: '/education',
         desc: 'Details of my academic background and my contributions to TXST',
     },
     {
