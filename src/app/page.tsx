@@ -95,7 +95,7 @@ function Home() {
                               <div className="space-y-1">
                                   <p className="text-sm">
                                       Photo by -&ensp;
-                                      <a href='href="https://unsplash.com/@choys_?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash' className='italic'>
+                                      <a href='href="https://unsplash.com/@choys_' className='italic'>
                                           @Conny Schneider
                                       </a>
                                       &ensp;on&ensp;
