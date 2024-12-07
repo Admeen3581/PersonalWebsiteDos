@@ -43,14 +43,14 @@ const InterestCard = ({props} : { props : InterestProps }) => {
                         height={2000}
                     />
                     <Image
-                        src={props.imgRef}
+                        src={props.imgRef2}
                         alt={props.imgAlt}
                         className="col-span-1 w-full h-auto rounded-md shadow-md transform rotate-6 hover:rotate-0 transition duration-500"
                         width={2000}
                         height={2000}
                     />
                     <Image
-                        src={props.imgRef}
+                        src={props.imgRef3}
                         alt={props.imgAlt}
                         className="col-span-1 w-full h-auto rounded-md shadow-md transform -rotate-6 hover:rotate-0 transition duration-500"
                         width={2000}
@@ -89,7 +89,7 @@ const InterestCard = ({props} : { props : InterestProps }) => {
         case 4:
             return (
                 <div className="relative flex items-center justify-between flex-row-reverse">
-                    <div className="w-5/12 text-center transform -rotate-6 hover:rotate-0 transition duration-500">
+                    <div className="w-5/12 text-center transform rotate-6 hover:rotate-0 transition duration-500">
                         <Image
                             src={props.imgRef}
                             alt={props.imgAlt}
@@ -131,7 +131,7 @@ const InterestCard = ({props} : { props : InterestProps }) => {
         case 6:
             return (
                 <div className="relative flex items-center justify-between flex-row-reverse">
-                    <div className="w-5/12 text-center transform rotate-12 hover:rotate-0 transition duration-500">
+                    <div className="w-5/12 text-center transform -rotate-12 hover:rotate-0 transition duration-500">
                         <Image
                             src={props.imgRef}
                             alt={props.imgAlt}
