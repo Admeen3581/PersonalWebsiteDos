@@ -47,7 +47,7 @@ export const showcaseElements: {title: string, href: string, desc: string}[] = [
     },
     {
         title: 'Blog',
-        href: '/',
+        href: '/blogs',
         desc: 'Sharing insights, ideas, and experiences through written reflections.',
     },
 ];
