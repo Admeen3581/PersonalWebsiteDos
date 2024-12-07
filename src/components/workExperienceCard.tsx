@@ -23,7 +23,7 @@ export default function WorkExperienceCard() {
                                 src={work.imgRef}
                                 alt={`${work.company} logo`}
                                 width={800}
-                                height={400}
+                                height={800}
                                 className="w-full h-40 object-cover"
                             />
                             <div className="p-4">

@@ -27,7 +27,7 @@ function Home() {
           {/* Background Layer */}
           <div className="absolute inset-0">
               <Image
-                  src="pictures/conny-schneider-abstract.jpg"
+                  src="/pictures/conny-schneider-abstract.jpg"
                   alt="background image"
                   className=""
                   fill
@@ -95,7 +95,7 @@ function Home() {
                               <div className="space-y-1">
                                   <p className="text-sm">
                                       Photo by -&ensp;
-                                      <a href='href="https://unsplash.com/@choys_?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash' className='italic'>
+                                      <a href='https://unsplash.com/@choys_' className='italic'>
                                           @Conny Schneider
                                       </a>
                                       &ensp;on&ensp;

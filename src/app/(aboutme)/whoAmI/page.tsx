@@ -27,9 +27,10 @@ function WhoAmI() {
                     <div className="relative flex flex-col mt-40">
                         <div className="relative lg:w-[320px] lg:h-[320px] rounded-full overflow-hidden border-4 border-blue-500 shadow-lg">
                             <Image
-                                src="/pictures/templateImage.jpg"
+                                src="https://i.imgur.com/ge2pRs3.jpg"
                                 alt="Adam Long Headshot"
-                                fill
+                                width={500}
+                                height={500}
                                 className="object-cover"
                             />
                         </div>
