@@ -8,7 +8,7 @@ Add badges from somewhere like: [shields.io](https://shields.io/)
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
 [![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
 
-# Adam Long - Personal Website (Dos)
+# Adam Long - [Personal Website (Dos)](https://www.adamlong18.vercel.app)
 
 Personal Website Dos, is a modern and polished platform designed to showcase my skills, interests, and achievements. Built with a powerful tech stack that includes TypeScript, Next.js, React, and Tailwind CSS, it demonstrates my ability to develop web-based applications. 
 
@@ -27,6 +27,8 @@ git clone https://github.com/iaincollins/nextjs-starter.git
 npm install
 npm run dev
 ```
+
+Link to the image repository - https://admeen3581.imgur.com/all
 
 ## License
 
