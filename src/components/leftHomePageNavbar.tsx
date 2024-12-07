@@ -31,7 +31,7 @@ const LeftHomePageNavbar = () => {
                                     <NavigationMenuLink asChild>
                                         <Link
                                             className="from-gray-600 to-gray-800 flex w-full select-none flex-col justify-end rounded-md bg-gradient-to-b p-3 no-underline outline-none hover:shadow-md"
-                                            href="/"
+                                            href="/whoAmI"
                                         >
                                             <div className="mb-2 text-lg font-bold">Who Am I?</div>
                                             <p className="text-gray-300 text-sm font-semibold leading-tight">
