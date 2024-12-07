@@ -9,7 +9,7 @@ import {NavbarNonHome} from "@/components/navbarNonHome";
 import Image from 'next/image';
 import {BicepsFlexed, CodeXml, GraduationCap, Briefcase, NotebookPen, Computer} from 'lucide-react';
 import Link from "next/link";
-import {textElements} from "@/app/whoAmI/textElements";
+import {textElements} from "@/app/(aboutme)/whoAmI/textElements";
 
 function WhoAmI() {
     return (
