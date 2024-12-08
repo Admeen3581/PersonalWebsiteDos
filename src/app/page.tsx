@@ -107,10 +107,10 @@ function Home() {
                 />
 
                 {/* Badge Icon */}
-                <div className='fixed bottom-5 right-5 text-white text-sm font-bold'>
+                <div className='fixed bottom-5 right-5 text-white text-sm font-bold font-aptos'>
                     <HoverCard>
-                        <HoverCardTrigger className='bg-blue-700 text-white text-sm font-bold py-2 px-3 rounded-full shadow-lg hover:bg-blue-900'>Photo Credit</HoverCardTrigger>
-                        <HoverCardContent className='w-180 h-12 mr-2'>
+                        <HoverCardTrigger className='bg-blue-700 text-white text-sm font-bold py-2 px-4 rounded-full shadow-lg hover:bg-blue-900'>Photo Credit</HoverCardTrigger>
+                        <HoverCardContent className='w-180 h-12 mr-2 pb-9'>
                             <div className="flex justify-between space-x-4">
                                 <div className="space-y-1">
                                     <p className="text-sm">
