@@ -9,6 +9,7 @@ import {BackgroundNonHome} from "@/components/backgroundNonHome";
 import Image from 'next/image'
 import {CircleChevronLeft} from "lucide-react";
 import Link from "next/link";
+import ScrollToTop from "@/components/ui/scrollToTop";
 
 export default function BlogPost({ params }: { params: { id: string } })
 {
@@ -83,6 +84,10 @@ export default function BlogPost({ params }: { params: { id: string } })
                                 </div>
                             ))}
                         </div>
+                    </div>
+                    <div className='h-10'/>
+                    <div>
+                        <ScrollToTop/>
                     </div>
                 </div>
             </div>
