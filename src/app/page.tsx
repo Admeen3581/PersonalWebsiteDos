@@ -10,15 +10,11 @@
 import Image from "next/image";
 import Particles from "@/components/ui/particles";
 import GradualSpacing from "@/components/ui/gradualSpacing";
-import {
-    HoverCard,
-    HoverCardContent,
-    HoverCardTrigger,
-} from "@/components/ui/hoverCard"
-import {Link, Terminal} from "lucide-react";
+import {Terminal} from "lucide-react";
 import {useEffect, useState} from "react";
 import {Alert, AlertDescription, AlertTitle} from "@/components/ui/alert";
 import {NavbarDefault} from "@/components/navbarDefault";
+import CreditBadge from "@/components/creditBadge";
 
 
 //Function
@@ -84,29 +80,8 @@ function Home() {
                 />
 
                 {/* Badge Icon */}
-                <div className='fixed bottom-5 right-5 text-white text-sm font-bold font-aptos'>
-                    <HoverCard>
-                        <HoverCardTrigger className='bg-blue-700 text-white text-sm font-bold py-2 px-4 rounded-full shadow-lg hover:bg-blue-900'>Photo Credit</HoverCardTrigger>
-                        <HoverCardContent className='w-180 h-12 mr-2 pb-9'>
-                            <div className="flex justify-between space-x-4">
-                                <div className="space-y-1">
-                                    <p className="text-sm">
-                                        Photo by -&ensp;
-                                        <a href='https://unsplash.com/@choys_' className='italic'>
-                                            @Conny Schneider
-                                        </a>
-                                        &ensp;on&ensp;
-                                        <a href="https://unsplash.com/photos/a-blue-background-with-lines-and-dots-xuTJZ7uD7PI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" className='inline-flex'>
-                                            Unsplash<Link className="w-3 h-3" />
-                                        </a>
-                                    </p>
-                                    <div className="flex items-center pt-2">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </HoverCardContent>
-                    </HoverCard>
+                <div className='fixed bottom-5 right-5'>
+                    <CreditBadge/>
                 </div>
 
                 {showAlert && (
