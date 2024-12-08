@@ -7,6 +7,7 @@ import {NavbarNonHome} from "@/components/navbarNonHome";
 import GradualSpacing from "@/components/ui/gradualSpacing";
 import {philosophyElements} from "@/app/(aboutme)/philosophies/philosophyElements";
 import PhilosophyCard from "@/components/philosophyCard";
+import ScrollToTop from "@/components/ui/scrollToTop";
 
 function Philosophies() {
     return (
@@ -50,6 +51,10 @@ function Philosophies() {
                             </div>
                         ))}
                     </div>
+                    <div className='h-10'/>
+                </div>
+                <div>
+                    <ScrollToTop/>
                 </div>
             </div>
         </div>

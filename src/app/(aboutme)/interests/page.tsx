@@ -9,6 +9,7 @@ import {NavbarNonHome} from "@/components/navbarNonHome";
 import GradualSpacing from "@/components/ui/gradualSpacing";
 import InterestCard from "@/components/interestCard";
 import {interestElements} from "@/app/(aboutme)/interests/interestElements";
+import ScrollToTop from "@/components/ui/scrollToTop";
 
 function Interests() {
 
@@ -45,6 +46,10 @@ function Interests() {
                             <InterestCard props={interest}/>
                         </div>
                     ))}
+                </div>
+                <div className='h-10'/>
+                <div>
+                    <ScrollToTop/>
                 </div>
             </div>
         </div>

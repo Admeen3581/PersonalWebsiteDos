@@ -67,7 +67,7 @@ function Blogs() {
                             </div>
                         </Link>
                     ))}
-                    <div className="h-10"></div>
+                    <div className="h-10"/>
                 </div>
                 <div>
                     <ScrollToTop/>

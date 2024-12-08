@@ -9,12 +9,13 @@ import {BackgroundNonHome} from "@/components/backgroundNonHome";
 import {NavbarNonHome} from "@/components/navbarNonHome";
 import GradualSpacing from "@/components/ui/gradualSpacing";
 import {galleryElements} from "@/app/(showcase)/gallery/galleryElements";
+import ScrollToTop from "@/components/ui/scrollToTop";
 
 function Gallery() {
     return (
         <div className="relative min-h-screen min-w-screen overflow-hidden">
             {/*Background component*/}
-            <BackgroundNonHome/>
+            <BackgroundNonHome particleNum={1300}/>
             {/*Foreground components*/}
             <div className="relative z-30 flex flex-col items-center justify-center h-full">
                 {/*Navbar component*/}
@@ -58,6 +59,9 @@ function Gallery() {
                         </div>
                     ))}
                     <div className="h-10"></div>
+                </div>
+                <div>
+                    <ScrollToTop/>
                 </div>
             </div>
         </div>
