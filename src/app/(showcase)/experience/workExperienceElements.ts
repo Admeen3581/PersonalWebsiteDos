@@ -17,7 +17,7 @@ export const workExperience = [
         company: "LearnLee",
         role: "Mathematics Tutor",
         duration: "August 2023 - Present",
-        description: "Provided personalized math tutoring, fostering student confidence and improving academic performance.",
+        description: "Advanced student abilities by assisting students in areas where they found less success.",
         imgRef: "https://i.imgur.com/S1Rb4Yr.jpg",
     },
     {
@@ -38,7 +38,8 @@ export const workExperience = [
         company: "LeanderISD",
         role: "Performing Arts Center Assistant Manager",
         duration: "May 2020 - June 2022",
-        description: "Coordinated events and managed operations, supporting a seamless experience for performers and audiences.",
+        description: "Coordinated events and managed operations, supporting a seamless experience for performers and audiences " +
+            "through means of lighting, audio, and rigging.",
         imgRef: "https://i.imgur.com/FS9WBhu.jpg",
     },
 ];
