@@ -12,7 +12,7 @@ function Philosophies() {
     return (
         <div className="relative min-h-screen min-w-screen overflow-hidden">
             {/*Background component*/}
-            <BackgroundNonHome/>
+            <BackgroundNonHome particleNum={2200}/>
             {/*Foreground components*/}
             <div className="relative z-30 flex flex-col items-center justify-center h-full">
                 {/*Navbar component*/}
