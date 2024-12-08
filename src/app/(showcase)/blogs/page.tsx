@@ -45,7 +45,7 @@ function Blogs() {
                     {blogElements.map((post) => (
                         <Link
                             key={post.id} href={`/blogs/${post.id}`}
-                            className='bg-blueblack rounded-lg overflow-hidden shadow-lg hover:scale-110 hover:rotate-6 duration-300'
+                            className='bg-blueblack rounded-lg overflow-hidden shadow-lg hover:scale-110 hover:rotate-6 duration-300 font-aptos'
                         >
                             <Image
                                 src={post.imgRef}

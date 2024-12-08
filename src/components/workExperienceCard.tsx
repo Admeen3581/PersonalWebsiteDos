@@ -17,7 +17,7 @@ export default function WorkExperienceCard() {
                     {workExperience.map((work, index) => (
                         <div
                             key={index}
-                            className="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+                            className="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300 font-aptos"
                         >
                             <Image
                                 src={work.imgRef}

@@ -55,6 +55,9 @@ const config: Config = {
 			'background-position-spin': 'background-position-spin 2200ms infinite alternate',
 			slideName: 'slideName 2.5s forwards',
 		},
+		rotate: {
+			'spin' : '360deg',
+		},
 		animationDelay: {
 			'1.5s' : '1.5',
 			'0.5s' : '0.5s',

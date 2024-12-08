@@ -34,7 +34,7 @@ function Education() {
                     </div>
                 </div>
                 {/*Content*/}
-                <div className="mt-24 text-center text-white space-y-5">
+                <div className="mt-24 text-center text-white space-y-5 font-aptos">
                     <h1 className='font-semibold font-aptos text-6xl'>
                         Texas State University
                     </h1>

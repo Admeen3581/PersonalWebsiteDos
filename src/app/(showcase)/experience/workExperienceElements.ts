@@ -38,7 +38,7 @@ export const workExperience = [
         company: "LeanderISD",
         role: "Performing Arts Center Assistant Manager",
         duration: "May 2020 - June 2022",
-        description: "Coordinated events and managed operations, supporting a seamless experience for performers and audiences " +
+        description: "Coordinated and managed operations, supporting a seamless experience for clients " +
             "through means of lighting, audio, and rigging.",
         imgRef: "https://i.imgur.com/FS9WBhu.jpg",
     },
