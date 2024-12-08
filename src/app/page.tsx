@@ -19,14 +19,24 @@ import {
 import {Link, Terminal} from "lucide-react";
 import RightHomePageNavbar from "@/components/rightHomePageNavbar";
 import LeftHomePageNavbar from "@/components/leftHomePageNavbar";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {Alert, AlertDescription, AlertTitle} from "@/components/ui/alert";
 
 
 //Function
 function Home() {
 
-    const [showAlert, setShowAlert] = useState(true);
+    useEffect(() => {
+        const isFirstVisit = localStorage.getItem('isFirstVisit');
+
+        if (!isFirstVisit) {
+            setShowAlert(true);
+            //Sets flag
+            localStorage.setItem('isFirstVisit', 'true');
+        }
+    }, []);
+
+    const [showAlert, setShowAlert] = useState(false);
 
     const handleAlertClose = () => {
         setShowAlert(false);
