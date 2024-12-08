@@ -7,7 +7,7 @@
 import Particles from "@/components/ui/particles";
 
 
-export const BackgroundNonHome = () => {
+export const BackgroundNonHome = ({particleNum = 800} : {particleNum? : number}) => {
     return (
         <div className="absolute inset-0 bg-black">
 
@@ -16,7 +16,7 @@ export const BackgroundNonHome = () => {
             <div className="absolute -left-60 -top-36 h-60 w-[44rem] transform-gpu md:right-0 bg-gradient-to-r opacity-30 from-[#e2beff] from-[28%] via-[#87a4ee] via-[70%] to-[#b060ff] rotate-[10deg] rounded-full blur-3xl"></div>
 
             <Particles
-                quantity={800}
+                quantity={particleNum}
                 color="#FFFFFF"
                 staticity={95}
                 size={0.8}
