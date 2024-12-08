@@ -12,7 +12,6 @@ import {
     NavigationMenuList,
     NavigationMenuTrigger,
 } from '@/components/ui/navigationMenu'
-import Link from 'next/link'
 import ListItem from '@/components/ui/navigationMenuListitem'
 import {contactElements, resourceElements} from '@/lib/navBarElements'
 
@@ -29,9 +28,9 @@ const RightHomePageNavbar = () => {
                             <ul className="grid gap-3 p-6 bg-gray-700 rounded-md shadow-lg md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                                 <li className="row-span-3">
                                     <NavigationMenuLink asChild>
-                                        <Link
+                                        <a
                                             className="from-gray-600 to-gray-800 flex w-full select-none flex-col justify-end rounded-md bg-gradient-to-b p-3 no-underline outline-none hover:shadow-md"
-                                            href="/"
+                                            href="/downloads/ADAMLONG-RESUME.pdf" download
                                         >
                                             <div className="mb-2 text-lg font-bold">Resume</div>
                                             <p className="text-gray-300 text-sm leading-tight">
@@ -41,7 +40,7 @@ const RightHomePageNavbar = () => {
                                             <p className="text-gray-300 text-sm leading-tight italic">
                                                 Click to download
                                             </p>
-                                        </Link>
+                                        </a>
                                     </NavigationMenuLink>
                                 </li>
                                 {resourceElements.map(component => (
