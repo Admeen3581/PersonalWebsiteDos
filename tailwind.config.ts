@@ -27,6 +27,7 @@ const config: Config = {
 			aptos: ['Aptos', 'monospace'],
 			space: ['Space', 'monospace'],
 			avalors: ['Avalors', 'monosapce'],
+			cascadia: ['Cascadia', 'monospace'],
   		},
   		borderRadius: {
   			lg: 'var(--radius)',

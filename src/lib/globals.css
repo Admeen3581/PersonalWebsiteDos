@@ -42,6 +42,13 @@ body {
   src: url("/fonts/Avalors.otf") format('opentype');
 }
 
+@font-face {
+  font-family: "Casacadia";
+  src: url("/fonts/Cascadia.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @layer base {
   :root {
     --radius: 0.5rem;
