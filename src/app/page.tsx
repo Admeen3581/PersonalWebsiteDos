@@ -28,8 +28,7 @@ function Home() {
 
     const [showAlert, setShowAlert] = useState(true);
 
-    const handleAlertClose = (e) => {
-        e.preventDefault();
+    const handleAlertClose = () => {
         setShowAlert(false);
     }
 
@@ -129,7 +128,7 @@ function Home() {
                             <Terminal className="h-8 w-8" />
                             <AlertTitle className='font-bold text-2xl ml-4 font-cascadia'>A quick mention - Mr.Margrave</AlertTitle>
                             <AlertDescription className='mt-4 font-cascadia'>
-                                Here it is, I custom built this website after a year or so of learning how to so. Just click around, if it looks short, it can be clicked. Thank you for being my professor. Hopefully the link wasn't too big of an issue to navigate. Cheers!
+                                Here it is, I custom built this website after a year to build my brand as a developer (and it was a cool project). Just click around, if it looks short, it can be clicked. Thank you for being my professor. Hopefully the link wasn't too big of an issue to navigate. Cheers!
                             </AlertDescription>
                             <div className='fixed right-5 bottom-5'>
                                 <button
@@ -142,7 +141,6 @@ function Home() {
                         </Alert>
                     </div>
                 )}
-
             </div>
         </div>
   );
