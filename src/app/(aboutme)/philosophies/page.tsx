@@ -3,7 +3,7 @@
  * @copyright 2024 - All rights reserved.
  */
 import {BackgroundNonHome} from "@/components/backgroundNonHome";
-import {NavbarNonHome} from "@/components/navbarNonHome";
+import {NavbarDefault} from "@/components/navbarDefault";
 import GradualSpacing from "@/components/ui/gradualSpacing";
 import {philosophyElements} from "@/app/(aboutme)/philosophies/philosophyElements";
 import PhilosophyCard from "@/components/philosophyCard";
@@ -17,7 +17,7 @@ function Philosophies() {
             {/*Foreground components*/}
             <div className="relative z-30 flex flex-col items-center justify-center h-full">
                 {/*Navbar component*/}
-                <NavbarNonHome/>
+                <NavbarDefault/>
                 {/*Heading*/}
                 <div className='grid grid-cols-3 pt-20'>
                     <div className='flex flex-col items-start'>

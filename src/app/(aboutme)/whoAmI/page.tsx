@@ -5,7 +5,7 @@
 
 //Imports
 import {BackgroundNonHome} from "@/components/backgroundNonHome";
-import {NavbarNonHome} from "@/components/navbarNonHome";
+import {NavbarDefault} from "@/components/navbarDefault";
 import Image from 'next/image';
 import {BicepsFlexed, CodeXml, GraduationCap, Briefcase, NotebookPen, Computer} from 'lucide-react';
 import Link from "next/link";
@@ -19,7 +19,7 @@ function WhoAmI() {
             {/*Foreground components*/}
             <div className="relative z-30 flex flex-col items-center justify-center h-full">
                 {/*Navbar component*/}
-                <NavbarNonHome/>
+                <NavbarDefault/>
                 {/*Page Content*/}
                 <div className="flex flex-col items-center min-h-screen text-white">
 

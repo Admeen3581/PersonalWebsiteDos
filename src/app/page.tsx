@@ -10,17 +10,15 @@
 import Image from "next/image";
 import Particles from "@/components/ui/particles";
 import GradualSpacing from "@/components/ui/gradualSpacing";
-import {NeonGradientCard} from "@/components/ui/neonGradientCard";
 import {
     HoverCard,
     HoverCardContent,
     HoverCardTrigger,
 } from "@/components/ui/hoverCard"
 import {Link, Terminal} from "lucide-react";
-import RightHomePageNavbar from "@/components/rightHomePageNavbar";
-import LeftHomePageNavbar from "@/components/leftHomePageNavbar";
 import {useEffect, useState} from "react";
 import {Alert, AlertDescription, AlertTitle} from "@/components/ui/alert";
+import {NavbarDefault} from "@/components/navbarDefault";
 
 
 //Function
@@ -67,29 +65,8 @@ function Home() {
             {/* Foreground Layer */}
             <div className="relative z-30 flex flex-col items-center justify-center h-full">
                 {/*Nav Bar Layer*/}
-                <div className="relative z-40 pt-20 animate-slideName delay-[1.7s] inline-flex items-center">
-
-                    <LeftHomePageNavbar/>
-
-                    <NeonGradientCard
-                        className="max-w-sm flex items-center justify-center text-center rounded-full pointer-events-none"
-                        borderRadius={100}
-                        borderSize={13.5}
-                        neonColors={{
-                            firstColor: "#073873",
-                            secondColor: "#FFFFFF"
-                        }}
-                    >
-                        <Image
-                            src="/pictures/al18.jpg"
-                            className='rounded-full'
-                            width={128}
-                            height={128}
-                            alt="Picture of the author"
-                        />
-                    </NeonGradientCard>
-
-                    <RightHomePageNavbar/>
+                <div className="relative z-40 animate-slideName delay-[1.7s] inline-flex items-center">
+                    <NavbarDefault/>
                 </div>
 
                 {/*Title Text*/}

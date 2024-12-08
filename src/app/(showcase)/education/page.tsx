@@ -3,7 +3,7 @@
  * @copyright 2024 - All rights reserved.
  */
 import {BackgroundNonHome} from "@/components/backgroundNonHome";
-import {NavbarNonHome} from "@/components/navbarNonHome";
+import {NavbarDefault} from "@/components/navbarDefault";
 import GradualSpacing from "@/components/ui/gradualSpacing";
 
 function Education() {
@@ -14,7 +14,7 @@ function Education() {
             {/*Foreground components*/}
             <div className="relative z-30 flex flex-col items-center justify-center h-full">
                 {/*Navbar component*/}
-                <NavbarNonHome/>
+                <NavbarDefault/>
                 <div className='grid grid-cols-4 ml-20 pt-20'>
                     {/*Heading*/}
                     <div className='flex flex-col items-start'>

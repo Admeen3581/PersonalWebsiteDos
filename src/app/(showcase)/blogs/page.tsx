@@ -5,7 +5,7 @@
 
 //Imports
 import {BackgroundNonHome} from "@/components/backgroundNonHome";
-import {NavbarNonHome} from "@/components/navbarNonHome";
+import {NavbarDefault} from "@/components/navbarDefault";
 import GradualSpacing from "@/components/ui/gradualSpacing";
 import { blogElements } from "@/app/(showcase)/blogs/blogElements";
 import Link from "next/link";
@@ -20,7 +20,7 @@ function Blogs() {
             {/*Foreground components*/}
             <div className="relative z-30 flex flex-col items-center justify-center h-full">
                 {/*Navbar component*/}
-                <NavbarNonHome/>
+                <NavbarDefault/>
                 {/*Page Content*/}
                 <div className='grid grid-cols-3 pt-20'>
                     {/*Heading*/}

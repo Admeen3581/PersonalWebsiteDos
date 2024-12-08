@@ -6,7 +6,7 @@
 //Imports
 import Image from 'next/image';
 import {BackgroundNonHome} from "@/components/backgroundNonHome";
-import {NavbarNonHome} from "@/components/navbarNonHome";
+import {NavbarDefault} from "@/components/navbarDefault";
 import GradualSpacing from "@/components/ui/gradualSpacing";
 import {galleryElements} from "@/app/(showcase)/gallery/galleryElements";
 import ScrollToTop from "@/components/ui/scrollToTop";
@@ -19,7 +19,7 @@ function Gallery() {
             {/*Foreground components*/}
             <div className="relative z-30 flex flex-col items-center justify-center h-full">
                 {/*Navbar component*/}
-                <NavbarNonHome/>
+                <NavbarDefault/>
                 <div className='grid grid-cols-3 pt-20'>
                     {/*Heading*/}
                     <div className='flex flex-col items-start'>

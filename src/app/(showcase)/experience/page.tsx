@@ -5,7 +5,7 @@
 
 //Imports
 import {BackgroundNonHome} from "@/components/backgroundNonHome";
-import {NavbarNonHome} from "@/components/navbarNonHome";
+import {NavbarDefault} from "@/components/navbarDefault";
 import GradualSpacing from "@/components/ui/gradualSpacing";
 import WorkExperienceCard from "@/components/workExperienceCard";
 
@@ -17,7 +17,7 @@ function WorkExperience() {
             {/*Foreground components*/}
             <div className="relative z-30 flex flex-col items-center justify-center h-full">
                 {/*Navbar component*/}
-                <NavbarNonHome/>
+                <NavbarDefault/>
                 {/*Heading*/}
                 <div className='grid grid-cols-2 pt-20'>
                     <div className='flex flex-col items-start'>
