@@ -40,7 +40,7 @@ function Interests() {
                     </div>
                 </div>
                 {/*Page Content*/}
-                <div className="w-10/12 px-8 py-20 space-y-32 mt-24">
+                <div className="w-10/12 px-8 py-20 space-y-32 mt-24 font-aptos">
                     {interestElements.map((interest) => (
                         <div key={interest.title}>
                             <InterestCard props={interest}/>

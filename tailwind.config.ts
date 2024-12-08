@@ -12,6 +12,9 @@ const config: Config = {
 		boxShadow: {
 			'inner-xl': 'inset 0 4px 8px 0 rgb(0 0 0 / 0.05)',
 		},
+		aspectRatio: {
+			'4/3' : '4/3',
+		},
   		colors: {
   			background: 'var(--background)',
   			foreground: 'var(--foreground)',
