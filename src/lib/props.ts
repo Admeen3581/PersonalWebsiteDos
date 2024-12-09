@@ -7,6 +7,12 @@
 import {LucideIcon} from "lucide-react";
 
 
+export interface NavBarProps {
+    title: string,
+    href: string,
+    desc: string,
+}
+
 export interface PhilosophyProps {
     icon : LucideIcon,
     title : string,
