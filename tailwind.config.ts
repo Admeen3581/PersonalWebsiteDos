@@ -12,6 +12,9 @@ const config: Config = {
 		boxShadow: {
 			'inner-xl': 'inset 0 4px 8px 0 rgb(0 0 0 / 0.05)',
 		},
+		aspectRatio: {
+			'4/3' : '4/3',
+		},
   		colors: {
   			background: 'var(--background)',
   			foreground: 'var(--foreground)',
@@ -51,6 +54,9 @@ const config: Config = {
 		animation: {
 			'background-position-spin': 'background-position-spin 2200ms infinite alternate',
 			slideName: 'slideName 2.5s forwards',
+		},
+		rotate: {
+			'spin' : '360deg',
 		},
 		animationDelay: {
 			'1.5s' : '1.5',

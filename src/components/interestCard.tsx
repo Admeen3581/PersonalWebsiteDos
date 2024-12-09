@@ -38,21 +38,21 @@ const InterestCard = ({props} : { props : InterestProps }) => {
                     <Image
                         src={props.imgRef}
                         alt={props.imgAlt}
-                        className="col-span-1 w-full h-auto rounded-md shadow-md transform -rotate-6 hover:rotate-0 transition duration-500"
+                        className="col-span-1 w-full h-auto rounded-md shadow-md transform -rotate-6 hover:rotate-0 transition duration-500 aspect-4/3"
                         width={2000}
                         height={2000}
                     />
                     <Image
                         src={props.imgRef2}
                         alt={props.imgAlt}
-                        className="col-span-1 w-full h-auto rounded-md shadow-md transform rotate-6 hover:rotate-0 transition duration-500"
+                        className="col-span-1 w-full h-auto rounded-md shadow-md transform rotate-6 hover:rotate-0 transition duration-500 aspect-4/3"
                         width={2000}
                         height={2000}
                     />
                     <Image
                         src={props.imgRef3}
                         alt={props.imgAlt}
-                        className="col-span-1 w-full h-auto rounded-md shadow-md transform -rotate-6 hover:rotate-0 transition duration-500"
+                        className="col-span-1 w-full h-auto rounded-md shadow-md transform -rotate-6 hover:rotate-0 transition duration-500 aspect-4/3"
                         width={2000}
                         height={2000}
                     />

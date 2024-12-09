@@ -5,9 +5,9 @@
 
 //Imports
 import {BackgroundNonHome} from "@/components/backgroundNonHome";
-import {NavbarNonHome} from "@/components/navbarNonHome";
-import GradualSpacing from "@/components/ui/gradualSpacing";
+import {NavbarDefault} from "@/components/navbarDefault";
 import WorkExperienceCard from "@/components/workExperienceCard";
+import PageSubheading from "@/components/pageSubheading";
 
 function WorkExperience() {
     return (
@@ -17,27 +17,14 @@ function WorkExperience() {
             {/*Foreground components*/}
             <div className="relative z-30 flex flex-col items-center justify-center h-full">
                 {/*Navbar component*/}
-                <NavbarNonHome/>
+                <NavbarDefault/>
                 {/*Heading*/}
-                <div className='grid grid-cols-2 pt-20'>
-                    <div className='flex flex-col items-start'>
-                        <GradualSpacing
-                            text="WORK EXPERIENCE"
-                            className="font-display text-sm text-white font-avalors shadow-inner"
-                            duration={2.0}
-                        />
-                        <br/>
-                        <div className='bg-gray-900 h-1 w-full'></div>
-                        <br/>
-                        <GradualSpacing
-                            text="My impact on the world"
-                            className="font-display text-3xl text-white font-avalors shadow-inner"
-                            duration={2.0}
-                        />
-                    </div>
-                </div>
+                <PageSubheading
+                    pageTitle={"work experience"}
+                    funnyTitle={'my impact on the world'}
+                />
                 {/*Page Content*/}
-                <div className='mt-12'>
+                <div className='mt-8'>
                     <WorkExperienceCard/>
                 </div>
             </div>

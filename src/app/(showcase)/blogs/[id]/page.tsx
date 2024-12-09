@@ -9,6 +9,7 @@ import {BackgroundNonHome} from "@/components/backgroundNonHome";
 import Image from 'next/image'
 import {CircleChevronLeft} from "lucide-react";
 import Link from "next/link";
+import ScrollToTop from "@/components/ui/scrollToTop";
 
 export default function BlogPost({ params }: { params: { id: string } })
 {
@@ -41,7 +42,7 @@ export default function BlogPost({ params }: { params: { id: string } })
                 {/* Foreground components */}
                 <div className="relative z-30 flex flex-col items-center h-full">
                     {/* Page Content */}
-                    <div className="w-10/12 max-w-5xl mx-auto pt-20">
+                    <div className="w-10/12 max-w-5xl mx-auto pt-20 font-aptos">
                         {/* Blog Header */}
                         <div className="text-center">
                             <p className="text-gray-400 text-sm">{blog.date}</p>
@@ -49,7 +50,7 @@ export default function BlogPost({ params }: { params: { id: string } })
                                 <div className='flex-none'>
                                     <Link href='../../blogs'>
                                         <CircleChevronLeft
-                                            className='w-10 h-10 mt-3'
+                                            className='w-10 h-10 mt-3 hover:scale-110 hover:text-blue-600 duration-500 hover:rotate-spin'
                                         />
                                     </Link>
                                 </div>
@@ -83,6 +84,10 @@ export default function BlogPost({ params }: { params: { id: string } })
                                 </div>
                             ))}
                         </div>
+                    </div>
+                    <div className='h-10'/>
+                    <div>
+                        <ScrollToTop/>
                     </div>
                 </div>
             </div>

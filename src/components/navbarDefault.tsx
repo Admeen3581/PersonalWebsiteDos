@@ -12,7 +12,7 @@ import Image from 'next/image'
 import Link from "next/link";
 
 
-export const NavbarNonHome = () => {
+export const NavbarDefault = () => {
     return (
         <div className="relative z-40 pt-20 inline-flex items-center">
 

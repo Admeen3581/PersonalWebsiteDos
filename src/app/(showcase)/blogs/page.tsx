@@ -5,12 +5,12 @@
 
 //Imports
 import {BackgroundNonHome} from "@/components/backgroundNonHome";
-import {NavbarNonHome} from "@/components/navbarNonHome";
-import GradualSpacing from "@/components/ui/gradualSpacing";
+import {NavbarDefault} from "@/components/navbarDefault";
 import { blogElements } from "@/app/(showcase)/blogs/blogElements";
 import Link from "next/link";
 import Image from "next/image";
 import ScrollToTop from "@/components/ui/scrollToTop";
+import PageSubheading from "@/components/pageSubheading";
 
 function Blogs() {
     return (
@@ -20,32 +20,18 @@ function Blogs() {
             {/*Foreground components*/}
             <div className="relative z-30 flex flex-col items-center justify-center h-full">
                 {/*Navbar component*/}
-                <NavbarNonHome/>
-                {/*Page Content*/}
-                <div className='grid grid-cols-3 pt-20'>
-                    {/*Heading*/}
-                    <div className='flex flex-col items-start'>
-                        <GradualSpacing
-                            text="BLOG"
-                            className="font-display text-sm text-white font-avalors shadow-inner"
-                            duration={2.0}
-                        />
-                        <br/>
-                        <div className='bg-gray-900 h-1 w-full'></div>
-                        <br/>
-                        <GradualSpacing
-                            text="What's going on?"
-                            className="font-display text-3xl text-white font-avalors shadow-inner"
-                            duration={2.0}
-                        />
-                    </div>
-                </div>
+                <NavbarDefault/>
+                {/*Heading*/}
+                <PageSubheading
+                    pageTitle={"blog"}
+                    funnyTitle={'what\'s going on'}
+                />
                 {/*Blog Content*/}
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16 w-10/12 mt-28">
                     {blogElements.map((post) => (
                         <Link
                             key={post.id} href={`/blogs/${post.id}`}
-                            className='bg-blueblack rounded-lg overflow-hidden shadow-lg hover:scale-110 hover:rotate-6 duration-300'
+                            className='bg-blueblack rounded-lg overflow-hidden shadow-lg hover:scale-110 hover:rotate-6 duration-300 font-aptos'
                         >
                             <Image
                                 src={post.imgRef}
@@ -67,7 +53,7 @@ function Blogs() {
                             </div>
                         </Link>
                     ))}
-                    <div className="h-10"></div>
+                    <div className="h-10"/>
                 </div>
                 <div>
                     <ScrollToTop/>

@@ -4,8 +4,9 @@
  */
 
 //Imports
+import {BlogProps} from "@/lib/props";
 
-export const blogElements: {id: number, title: string, desc: string, date: string, imgRef: string, content: string}[] = [
+export const blogElements: BlogProps[] = [
     {
         id: 1,
         title: "College Goals",

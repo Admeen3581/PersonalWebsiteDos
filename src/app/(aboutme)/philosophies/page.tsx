@@ -2,39 +2,29 @@
  * @author Adam Long
  * @copyright 2024 - All rights reserved.
  */
+
+//Imports
 import {BackgroundNonHome} from "@/components/backgroundNonHome";
-import {NavbarNonHome} from "@/components/navbarNonHome";
-import GradualSpacing from "@/components/ui/gradualSpacing";
+import {NavbarDefault} from "@/components/navbarDefault";
 import {philosophyElements} from "@/app/(aboutme)/philosophies/philosophyElements";
 import PhilosophyCard from "@/components/philosophyCard";
+import ScrollToTop from "@/components/ui/scrollToTop";
+import PageSubheading from "@/components/pageSubheading";
 
 function Philosophies() {
     return (
         <div className="relative min-h-screen min-w-screen overflow-hidden">
             {/*Background component*/}
-            <BackgroundNonHome/>
+            <BackgroundNonHome particleNum={2200}/>
             {/*Foreground components*/}
             <div className="relative z-30 flex flex-col items-center justify-center h-full">
                 {/*Navbar component*/}
-                <NavbarNonHome/>
+                <NavbarDefault/>
                 {/*Heading*/}
-                <div className='grid grid-cols-3 pt-20'>
-                    <div className='flex flex-col items-start'>
-                        <GradualSpacing
-                            text="PHILOSOPHIES"
-                            className="font-display text-sm text-white font-avalors shadow-inner"
-                            duration={2.0}
-                        />
-                        <br/>
-                        <div className='bg-gray-900 h-1 w-full'/>
-                        <br/>
-                        <GradualSpacing
-                            text="How I live my life"
-                            className="font-display text-3xl text-white font-avalors shadow-inner"
-                            duration={2.0}
-                        />
-                    </div>
-                </div>
+                <PageSubheading
+                    pageTitle={"philosophies"}
+                    funnyTitle={'how I live my life'}
+                />
                 {/*Page Content*/}
                 <div className="relative flex flex-col items-center justify-center w-9/12 mt-32">
                     <h1 className='text-2xl shadow-inner text-center font-aptos text-gray-300 leading-relaxed'>
@@ -50,6 +40,10 @@ function Philosophies() {
                             </div>
                         ))}
                     </div>
+                    <div className='h-10'/>
+                </div>
+                <div>
+                    <ScrollToTop/>
                 </div>
             </div>
         </div>

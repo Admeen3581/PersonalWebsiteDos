@@ -3,15 +3,8 @@
  * @copyright 2024 - All rights reserved.
  */
 
-export interface InterestProps {
-    variant : number,
-    title : string,
-    desc : string,
-    imgRef : string,
-    imgRef2? : string,
-    imgRef3? : string,
-    imgAlt? : string,
-}
+//Imports
+import {InterestProps} from "@/lib/props";
 
 export const interestElements: InterestProps[] = [
     {

@@ -3,7 +3,10 @@
  * @copyright 2024 - All rights reserved
  */
 
-export const textElements: {title: string, href?: string, desc: string}[] = [
+//Imports
+import {WhoAmIProps} from '@/lib/props'
+
+export const whoAmIElements: WhoAmIProps[] = [
     {
         title: "Texas State University (TXST)",
         href: "https://txst.edu",

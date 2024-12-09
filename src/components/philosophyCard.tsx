@@ -2,17 +2,12 @@
  * @author Adam Long
  * @copyright 2024 - All rights reserved.
  */
-import {LucideIcon} from "lucide-react";
 
 //Imports
+import {PhilosophyProps} from "@/lib/props";
 
-export interface philosophyProps {
-    icon : LucideIcon,
-    title : string,
-    desc : string,
-}
 
-const PhilosophyCard = ({prop} : {prop : philosophyProps}) => {
+const PhilosophyCard = ({prop} : {prop : PhilosophyProps}) => {
     return (
         <div className='relative grid grid-cols-3 gap-8 flex flex-col items-center justify-center text-center'>
             <div className="flex p-8 items-center">

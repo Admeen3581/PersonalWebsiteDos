@@ -2,9 +2,11 @@
  * @author Adam Long
  * @copyright 2024 - All rights reserved.
  */
+
+//Imports
 import {BackgroundNonHome} from "@/components/backgroundNonHome";
-import {NavbarNonHome} from "@/components/navbarNonHome";
-import GradualSpacing from "@/components/ui/gradualSpacing";
+import {NavbarDefault} from "@/components/navbarDefault";
+import PageSubheading from "@/components/pageSubheading";
 
 function Education() {
     return (
@@ -14,27 +16,14 @@ function Education() {
             {/*Foreground components*/}
             <div className="relative z-30 flex flex-col items-center justify-center h-full">
                 {/*Navbar component*/}
-                <NavbarNonHome/>
-                <div className='grid grid-cols-4 ml-20 pt-20'>
-                    {/*Heading*/}
-                    <div className='flex flex-col items-start'>
-                        <GradualSpacing
-                            text="EDUCATION"
-                            className="font-display text-sm text-white font-avalors shadow-inner"
-                            duration={2.0}
-                        />
-                        <br/>
-                        <div className='bg-gray-900 h-1 w-full'></div>
-                        <br/>
-                        <GradualSpacing
-                            text="My brain food"
-                            className="font-display text-3xl text-white font-avalors shadow-inner"
-                            duration={2.0}
-                        />
-                    </div>
-                </div>
+                <NavbarDefault/>
+                {/*Heading*/}
+                <PageSubheading
+                    pageTitle={"education"}
+                    funnyTitle={'my brain food'}
+                />
                 {/*Content*/}
-                <div className="mt-24 text-center text-white space-y-5">
+                <div className="mt-24 text-center text-white space-y-5 font-aptos">
                     <h1 className='font-semibold font-aptos text-6xl'>
                         Texas State University
                     </h1>

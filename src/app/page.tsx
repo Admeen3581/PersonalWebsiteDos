@@ -10,18 +10,11 @@
 import Image from "next/image";
 import Particles from "@/components/ui/particles";
 import GradualSpacing from "@/components/ui/gradualSpacing";
-import {NeonGradientCard} from "@/components/ui/neonGradientCard";
-import {
-    HoverCard,
-    HoverCardContent,
-    HoverCardTrigger,
-} from "@/components/ui/hoverCard"
-import {Link, Terminal} from "lucide-react";
-import RightHomePageNavbar from "@/components/rightHomePageNavbar";
-import LeftHomePageNavbar from "@/components/leftHomePageNavbar";
+import {Terminal} from "lucide-react";
 import {useEffect, useState} from "react";
 import {Alert, AlertDescription, AlertTitle} from "@/components/ui/alert";
-
+import {NavbarDefault} from "@/components/navbarDefault";
+import CreditBadge from "@/components/creditBadge";
 
 //Function
 function Home() {
@@ -67,29 +60,8 @@ function Home() {
             {/* Foreground Layer */}
             <div className="relative z-30 flex flex-col items-center justify-center h-full">
                 {/*Nav Bar Layer*/}
-                <div className="relative z-40 pt-20 animate-slideName delay-[1.7s] inline-flex items-center">
-
-                    <LeftHomePageNavbar/>
-
-                    <NeonGradientCard
-                        className="max-w-sm flex items-center justify-center text-center rounded-full pointer-events-none"
-                        borderRadius={100}
-                        borderSize={13.5}
-                        neonColors={{
-                            firstColor: "#073873",
-                            secondColor: "#FFFFFF"
-                        }}
-                    >
-                        <Image
-                            src="/pictures/al18.jpg"
-                            className='rounded-full'
-                            width={128}
-                            height={128}
-                            alt="Picture of the author"
-                        />
-                    </NeonGradientCard>
-
-                    <RightHomePageNavbar/>
+                <div className="relative z-40 animate-slideName delay-[1.7s] inline-flex items-center">
+                    <NavbarDefault/>
                 </div>
 
                 {/*Title Text*/}
@@ -107,29 +79,9 @@ function Home() {
                 />
 
                 {/* Badge Icon */}
-                <div className='fixed bottom-5 right-5 text-white text-sm font-bold'>
-                    <HoverCard>
-                        <HoverCardTrigger className='bg-blue-700 text-white text-sm font-bold py-2 px-3 rounded-full shadow-lg hover:bg-blue-900'>Photo Credit</HoverCardTrigger>
-                        <HoverCardContent className='w-180 h-12 mr-2'>
-                            <div className="flex justify-between space-x-4">
-                                <div className="space-y-1">
-                                    <p className="text-sm">
-                                        Photo by -&ensp;
-                                        <a href='https://unsplash.com/@choys_' className='italic'>
-                                            @Conny Schneider
-                                        </a>
-                                        &ensp;on&ensp;
-                                        <a href="https://unsplash.com/photos/a-blue-background-with-lines-and-dots-xuTJZ7uD7PI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" className='inline-flex'>
-                                            Unsplash<Link className="w-3 h-3" />
-                                        </a>
-                                    </p>
-                                    <div className="flex items-center pt-2">
 
-                                    </div>
-                                </div>
-                            </div>
-                        </HoverCardContent>
-                    </HoverCard>
+                <div className='fixed bottom-5 right-5'>
+                    <CreditBadge/>
                 </div>
 
                 {showAlert && (

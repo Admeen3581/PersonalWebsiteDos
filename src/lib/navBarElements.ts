@@ -3,7 +3,10 @@
  * @copyright 2024 - All rights reserved
  */
 
-export const resourceElements: { title: string, href: string, desc: string }[] = [
+//Imports
+import {NavBarProps} from "@/lib/props";
+
+export const resourceElements: NavBarProps[] = [
     {
         title: 'Downloadables',
         href: '/downloadables',
@@ -16,7 +19,7 @@ export const resourceElements: { title: string, href: string, desc: string }[] =
     },
 ];
 
-export const contactElements: { title: string, href: string, desc: string }[] = [
+export const contactElements: NavBarProps[] = [
     {
         title: 'Off the clock',
         href: '/casual',
@@ -29,7 +32,7 @@ export const contactElements: { title: string, href: string, desc: string }[] = 
     },
 ];
 
-export const showcaseElements: {title: string, href: string, desc: string}[] = [
+export const showcaseElements: NavBarProps[] = [
     {
         title: 'Work Experience',
         href: '/experience',
@@ -52,7 +55,7 @@ export const showcaseElements: {title: string, href: string, desc: string}[] = [
     },
 ];
 
-export const aboutMeElements: {title: string, href: string, desc: string}[] = [
+export const aboutMeElements: NavBarProps[] = [
     {
         title: 'Philosophies',
         href: '/philosophies',

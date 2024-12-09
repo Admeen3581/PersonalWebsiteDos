@@ -3,12 +3,11 @@
  * @copyright 2024 - All rights reserved.
  */
 
-interface downloadProps {
-    title : string,
-    link : string,
-}
 
-export const downloadElements : downloadProps[] = [
+//Imports
+import {DownloadProps} from '@/lib/props'
+
+export const downloadElements : DownloadProps[] = [
     {
         title: "I don't currently have links",
         link : 'https://www.Google.com',
