@@ -6,10 +6,10 @@
 //Imports
 import {BackgroundNonHome} from "@/components/backgroundNonHome";
 import {NavbarDefault} from "@/components/navbarDefault";
-import GradualSpacing from "@/components/ui/gradualSpacing";
 import {casualElements} from "@/app/(contact)/contactElements";
 import Image from "next/image";
 import Link from "next/link";
+import PageSubheading from "@/components/pageSubheading";
 
 function ContactProfessional() {
     return (
@@ -21,23 +21,10 @@ function ContactProfessional() {
                 {/*Navbar component*/}
                 <NavbarDefault/>
                 {/*Heading*/}
-                <div className='grid grid-cols-4 pt-20 ml-16'>
-                    <div className='flex flex-col items-start'>
-                        <GradualSpacing
-                            text="CONTACT"
-                            className="font-display text-sm text-white font-avalors shadow-inner"
-                            duration={2.0}
-                        />
-                        <br/>
-                        <div className='bg-gray-900 h-1 w-full'/>
-                        <br/>
-                        <GradualSpacing
-                            text="Gamers Unite"
-                            className="font-display text-3xl text-white font-avalors shadow-inner"
-                            duration={2.0}
-                        />
-                    </div>
-                </div>
+                <PageSubheading
+                    pageTitle={"contact"}
+                    funnyTitle={'gamers unite'}
+                />
                 {/*Page Content*/}
                 <div className='relative grid grid-cols-6 items-center justify-center flex flex-col text-black text-center font-aptos font-semibold pt-24'>
                     {casualElements.map((element) => (

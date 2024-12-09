@@ -4,7 +4,7 @@
  */
 import {BackgroundNonHome} from "@/components/backgroundNonHome";
 import {NavbarDefault} from "@/components/navbarDefault";
-import GradualSpacing from "@/components/ui/gradualSpacing";
+import PageSubheading from "@/components/pageSubheading";
 
 function Education() {
     return (
@@ -15,24 +15,11 @@ function Education() {
             <div className="relative z-30 flex flex-col items-center justify-center h-full">
                 {/*Navbar component*/}
                 <NavbarDefault/>
-                <div className='grid grid-cols-4 ml-20 pt-20'>
-                    {/*Heading*/}
-                    <div className='flex flex-col items-start'>
-                        <GradualSpacing
-                            text="EDUCATION"
-                            className="font-display text-sm text-white font-avalors shadow-inner"
-                            duration={2.0}
-                        />
-                        <br/>
-                        <div className='bg-gray-900 h-1 w-full'></div>
-                        <br/>
-                        <GradualSpacing
-                            text="My brain food"
-                            className="font-display text-3xl text-white font-avalors shadow-inner"
-                            duration={2.0}
-                        />
-                    </div>
-                </div>
+                {/*Heading*/}
+                <PageSubheading
+                    pageTitle={"education"}
+                    funnyTitle={'my brain food'}
+                />
                 {/*Content*/}
                 <div className="mt-24 text-center text-white space-y-5 font-aptos">
                     <h1 className='font-semibold font-aptos text-6xl'>

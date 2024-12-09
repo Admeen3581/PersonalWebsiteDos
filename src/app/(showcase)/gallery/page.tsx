@@ -7,9 +7,9 @@
 import Image from 'next/image';
 import {BackgroundNonHome} from "@/components/backgroundNonHome";
 import {NavbarDefault} from "@/components/navbarDefault";
-import GradualSpacing from "@/components/ui/gradualSpacing";
 import {galleryElements} from "@/app/(showcase)/gallery/galleryElements";
 import ScrollToTop from "@/components/ui/scrollToTop";
+import PageSubheading from "@/components/pageSubheading";
 
 function Gallery() {
     return (
@@ -20,24 +20,11 @@ function Gallery() {
             <div className="relative z-30 flex flex-col items-center justify-center h-full">
                 {/*Navbar component*/}
                 <NavbarDefault/>
-                <div className='grid grid-cols-3 pt-20'>
-                    {/*Heading*/}
-                    <div className='flex flex-col items-start'>
-                        <GradualSpacing
-                            text="GALLERY"
-                            className="font-display text-sm text-white font-avalors shadow-inner"
-                            duration={2.0}
-                        />
-                        <br/>
-                        <div className='bg-gray-900 h-1 w-full'></div>
-                        <br/>
-                        <GradualSpacing
-                            text="The photo album"
-                            className="font-display text-3xl text-white font-avalors shadow-inner"
-                            duration={2.0}
-                        />
-                    </div>
-                </div>
+                {/*Heading*/}
+                <PageSubheading
+                    pageTitle={"gallery"}
+                    funnyTitle={'the photo album'}
+                />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-20 w-10/12 mt-28 pointer-events-none grid-auto-rows">
                     {galleryElements.map((pic) => (
                         <div key={pic.title} className='font-aptos my-8'>
