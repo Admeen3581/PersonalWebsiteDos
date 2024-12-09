@@ -16,7 +16,6 @@ import {Alert, AlertDescription, AlertTitle} from "@/components/ui/alert";
 import {NavbarDefault} from "@/components/navbarDefault";
 import CreditBadge from "@/components/creditBadge";
 
-
 //Function
 function Home() {
 
@@ -80,6 +79,7 @@ function Home() {
                 />
 
                 {/* Badge Icon */}
+
                 <div className='fixed bottom-5 right-5'>
                     <CreditBadge/>
                 </div>
