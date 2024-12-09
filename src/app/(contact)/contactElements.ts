@@ -3,12 +3,9 @@
  * @copyright 2024 - All rights reserved.
  */
 
+//Imports
+import {ContactProps} from "@/lib/props";
 
-export interface ContactProps {
-    href : string,
-    icon : string,
-    title : string,
-}
 
 export const professionalElements : ContactProps[] = [
     {

@@ -4,7 +4,7 @@
  */
 
 //Imports
-import {philosophyProps} from "@/components/philosophyCard";
+import {PhilosophyProps} from "@/lib/props";
 import
 {
     ArrowsUpFromLine,
@@ -18,7 +18,7 @@ import
 } from "lucide-react";
 
 
-export const philosophyElements : philosophyProps[] = [
+export const philosophyElements : PhilosophyProps[] = [
     {
         icon: Smile,
         title: "Don't be perfect, be memorable",

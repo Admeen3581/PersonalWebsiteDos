@@ -1,10 +1,12 @@
 /**
  * @author Adam Long
  * @copyright 2024 - All rights reserved.
- * @todo Replace descriptions with not AI placeholders.
  */
 
-export const workExperience = [
+//Imports
+import {ExperienceProps} from "@/lib/props";
+
+export const workExperience : ExperienceProps[] = [
     {
         company: "Dell Technologies",
         role: "Software Engineering Intern",
